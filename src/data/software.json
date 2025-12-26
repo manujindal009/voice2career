@@ -1,0 +1,210 @@
+{
+  "field": "Software Engineering",
+  "questions": [
+    {
+      "id": 1,
+      "question": "What is programming and why is it important?",
+      "sampleAnswer": "Programming is the process of writing instructions that a computer can execute to perform specific tasks. It is important because it allows us to build software, automate tasks, solve problems, and create applications used in daily life."
+    },
+    {
+      "id": 2,
+      "question": "What is the difference between compiled and interpreted languages?",
+      "sampleAnswer": "Compiled languages are converted into machine code before execution, resulting in faster performance, whereas interpreted languages are executed line by line at runtime, making them slower but easier to debug."
+    },
+    {
+      "id": 3,
+      "question": "Explain variables and data types.",
+      "sampleAnswer": "Variables are used to store data values in a program. Data types define the type of data a variable can hold, such as integer, string, boolean, or float."
+    },
+    {
+      "id": 4,
+      "question": "What is the difference between stack and heap memory?",
+      "sampleAnswer": "Stack memory is used for static memory allocation and function calls, while heap memory is used for dynamic memory allocation. Stack is faster but limited, whereas heap is larger but slower."
+    },
+    {
+      "id": 5,
+      "question": "What is a function?",
+      "sampleAnswer": "A function is a block of code designed to perform a specific task. It helps in code reusability, modularity, and better organization."
+    },
+    {
+      "id": 6,
+      "question": "What is recursion?",
+      "sampleAnswer": "Recursion is a programming technique where a function calls itself to solve a problem by breaking it into smaller subproblems."
+    },
+    {
+      "id": 7,
+      "question": "What is an algorithm?",
+      "sampleAnswer": "An algorithm is a step-by-step procedure or set of rules used to solve a specific problem."
+    },
+    {
+      "id": 8,
+      "question": "What is time complexity?",
+      "sampleAnswer": "Time complexity is a measure of how the execution time of an algorithm increases with the size of input."
+    },
+    {
+      "id": 9,
+      "question": "What is space complexity?",
+      "sampleAnswer": "Space complexity measures the amount of memory an algorithm requires relative to the input size."
+    },
+    {
+      "id": 10,
+      "question": "What is debugging?",
+      "sampleAnswer": "Debugging is the process of finding and fixing errors or bugs in a program."
+    },
+
+    {
+      "id": 11,
+      "question": "What is Object-Oriented Programming?",
+      "sampleAnswer": "Object-Oriented Programming is a programming paradigm based on objects that contain data and methods to manipulate that data."
+    },
+    {
+      "id": 12,
+      "question": "What is a class and an object?",
+      "sampleAnswer": "A class is a blueprint or template for creating objects, while an object is an instance of a class."
+    },
+    {
+      "id": 13,
+      "question": "Explain encapsulation.",
+      "sampleAnswer": "Encapsulation is the concept of wrapping data and methods into a single unit and restricting direct access to some components."
+    },
+    {
+      "id": 14,
+      "question": "What is inheritance?",
+      "sampleAnswer": "Inheritance allows one class to acquire the properties and methods of another class, promoting code reuse."
+    },
+    {
+      "id": 15,
+      "question": "What is polymorphism?",
+      "sampleAnswer": "Polymorphism allows methods to perform different behaviors based on the object calling them."
+    },
+    {
+      "id": 16,
+      "question": "What is abstraction?",
+      "sampleAnswer": "Abstraction hides complex implementation details and shows only the necessary features to the user."
+    },
+    {
+      "id": 17,
+      "question": "Difference between abstraction and encapsulation.",
+      "sampleAnswer": "Abstraction focuses on hiding implementation details, while encapsulation focuses on hiding data using access modifiers."
+    },
+    {
+      "id": 18,
+      "question": "What are constructors?",
+      "sampleAnswer": "Constructors are special methods used to initialize objects when a class is instantiated."
+    },
+    {
+      "id": 19,
+      "question": "What is method overloading?",
+      "sampleAnswer": "Method overloading allows multiple methods with the same name but different parameters."
+    },
+    {
+      "id": 20,
+      "question": "What is method overriding?",
+      "sampleAnswer": "Method overriding occurs when a subclass provides a specific implementation of a method already defined in its parent class."
+    },
+
+    {
+      "id": 21,
+      "question": "What is JavaScript?",
+      "sampleAnswer": "JavaScript is a high-level, interpreted programming language used to make web pages interactive."
+    },
+    {
+      "id": 22,
+      "question": "Difference between var, let, and const.",
+      "sampleAnswer": "var has function scope, let has block scope, and const is block-scoped and cannot be reassigned."
+    },
+    {
+      "id": 23,
+      "question": "What is hoisting?",
+      "sampleAnswer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the scope before execution."
+    },
+    {
+      "id": 24,
+      "question": "What is a closure?",
+      "sampleAnswer": "A closure is a function that has access to variables from its outer scope even after the outer function has finished execution."
+    },
+    {
+      "id": 25,
+      "question": "What is the difference between == and ===?",
+      "sampleAnswer": "== compares values with type coercion, while === compares both value and type strictly."
+    },
+
+    {
+      "id": 26,
+      "question": "What is HTML?",
+      "sampleAnswer": "HTML is a markup language used to structure content on the web."
+    },
+    {
+      "id": 27,
+      "question": "What is CSS?",
+      "sampleAnswer": "CSS is used to style and layout web pages."
+    },
+    {
+      "id": 28,
+      "question": "What is responsive design?",
+      "sampleAnswer": "Responsive design ensures that web pages adapt to different screen sizes and devices."
+    },
+    {
+      "id": 29,
+      "question": "What is HTTP?",
+      "sampleAnswer": "HTTP is a protocol used for communication between a client and a server."
+    },
+    {
+      "id": 30,
+      "question": "What is REST API?",
+      "sampleAnswer": "REST API is an architectural style for designing networked applications using HTTP methods."
+    },
+
+    {
+      "id": 31,
+      "question": "What is React?",
+      "sampleAnswer": "React is a JavaScript library used for building user interfaces."
+    },
+    {
+      "id": 32,
+      "question": "What is JSX?",
+      "sampleAnswer": "JSX is a syntax extension that allows writing HTML-like code inside JavaScript."
+    },
+    {
+      "id": 33,
+      "question": "What are components in React?",
+      "sampleAnswer": "Components are reusable building blocks of a React application."
+    },
+    {
+      "id": 34,
+      "question": "What is state in React?",
+      "sampleAnswer": "State is an object that holds dynamic data and controls a component's behavior."
+    },
+    {
+      "id": 35,
+      "question": "What are props?",
+      "sampleAnswer": "Props are inputs passed to components to customize their behavior."
+    },
+
+    {
+      "id": 36,
+      "question": "What is version control?",
+      "sampleAnswer": "Version control helps track changes in code and allows collaboration between developers."
+    },
+    {
+      "id": 37,
+      "question": "What is Git?",
+      "sampleAnswer": "Git is a distributed version control system used to manage source code."
+    },
+    {
+      "id": 38,
+      "question": "What is GitHub?",
+      "sampleAnswer": "GitHub is a platform for hosting Git repositories and collaborating on projects."
+    },
+    {
+      "id": 39,
+      "question": "What is deployment?",
+      "sampleAnswer": "Deployment is the process of making an application available for users."
+    },
+    {
+      "id": 40,
+      "question": "What is CI/CD?",
+      "sampleAnswer": "CI/CD is a practice that automates code integration, testing, and deployment."
+    }
+  ]
+}
