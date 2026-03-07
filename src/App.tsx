@@ -26,7 +26,7 @@ import InterviewDetails from "@/pages/InterviewDetails";
 import StudyReader from "@/pages/StudyReader";
 import Result from "@/pages/Result";
 import NotFound from "@/pages/NotFound";
-import { STUDY_FOLDERS } from "./study-materials";
+//import { STUDY_FOLDERS } from "./study-materials";
 //import Chatbot from "@/pages/Chatbot";
 
 
@@ -51,7 +51,13 @@ export default function App() {
     <QueryClientProvider client={queryClient}>
       <BrowserRouter>
   <AuthProvider>
-    <Suspense fallback={<div className="p-10">Loading...</div>}>
+    <Suspense
+  fallback={
+    <div className="flex items-center justify-center h-screen text-gray-500">
+      Loading Voice2Career...
+    </div>
+  }
+>
       <Routes>
             {/* 🌐 PUBLIC */}
             <Route path="/" element={<LandingPage />} />
