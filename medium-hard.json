@@ -1,0 +1,294 @@
+[
+  {
+    "question": "If the cost price of an item is ₹500 and it is sold at 20% profit, what is the selling price?",
+    "options": ["₹550", "₹600", "₹650", "₹700"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "If a number is increased by 25% and becomes 250, what was the original number?",
+    "options": ["180", "190", "200", "210"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "A train travels 180 km in 3 hours. What is its speed?",
+    "options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If A can complete a work in 10 days, how many days will A take to complete 50% of the work?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the next number: 2, 6, 12, 20, ?",
+    "options": ["28", "30", "32", "36"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio of boys to girls in a class is 3:2. If there are 30 boys, how many girls are there?",
+    "options": ["15", "18", "20", "25"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If the average of 5 numbers is 24, what is their total?",
+    "options": ["100", "110", "120", "130"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If 15% of a number is 75, what is the number?",
+    "options": ["400", "450", "500", "550"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find missing number: 3, 9, 27, ?",
+    "options": ["54", "72", "81", "90"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If a discount of 10% is given on ₹800, what is the final price?",
+    "options": ["₹700", "₹720", "₹750", "₹780"],
+    "answer": 1,
+    "section": "Quant"
+  },
+
+  {
+    "question": "Choose the correct synonym of 'Obsolete'.",
+    "options": ["Modern", "Outdated", "Popular", "Active"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Choose the correct antonym of 'Scarce'.",
+    "options": ["Rare", "Limited", "Abundant", "Few"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Fill in the blank: He is capable ______ solving the problem.",
+    "options": ["to", "for", "of", "with"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Identify the error: She don't like coffee.",
+    "options": ["She", "don't", "like", "coffee"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Choose the correct passive voice: 'They completed the work.'",
+    "options": [
+      "The work completed by them.",
+      "The work was completed by them.",
+      "The work is completed by them.",
+      "The work had completed by them."
+    ],
+    "answer": 1,
+    "section": "English"
+  },
+
+  {
+    "question": "If 12 men can complete a work in 8 days, how many days will 6 men take?",
+    "options": ["12", "14", "16", "18"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find next: 1, 4, 10, 22, ?",
+    "options": ["40", "46", "52", "60"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the simple interest on ₹2000 for 2 years at 5% per annum is?",
+    "options": ["₹100", "₹150", "₹200", "₹250"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If a car increases its speed from 60 km/h to 75 km/h, what is percentage increase?",
+    "options": ["20%", "25%", "30%", "15%"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Which number replaces the question mark? 5, 11, 23, 47, ?",
+    "options": ["90", "92", "95", "99"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+
+  {
+    "question": "If the perimeter of a square is 40 cm, what is its area?",
+    "options": ["80", "90", "100", "110"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Accomodation", "Accommodation", "Acommodation", "Accomadation"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If a train covers 300 km in 5 hours, how far will it travel in 8 hours?",
+    "options": ["420 km", "450 km", "480 km", "500 km"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find missing number: 7, 14, 28, 56, ?",
+    "options": ["84", "98", "112", "120"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the selling price is ₹960 and loss is 20%, what is cost price?",
+    "options": ["₹1000", "₹1100", "₹1200", "₹800"],
+    "answer": 2,
+    "section": "Quant"
+  },
+
+  {
+    "question": "Which word is closest in meaning to 'Meticulous'?",
+    "options": ["Careless", "Precise", "Lazy", "Quick"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If the average of 8 numbers is 18 and 7 numbers average is 16, what is the 8th number?",
+    "options": ["30", "32", "34", "36"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find next: 2, 3, 5, 9, 17, ?",
+    "options": ["33", "30", "31", "29"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If 3x = 27, what is x?",
+    "options": ["7", "8", "9", "10"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose correct indirect speech: He said, 'I am busy.'",
+    "options": [
+      "He said that he is busy.",
+      "He said that he was busy.",
+      "He said he busy.",
+      "He says that he was busy."
+    ],
+    "answer": 1,
+    "section": "English"
+  },
+
+  {
+    "question": "Find the compound interest on ₹1000 at 10% for 2 years.",
+    "options": ["₹200", "₹210", "₹220", "₹230"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Which comes next: A, C, F, J, ?",
+    "options": ["O", "P", "Q", "R"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the ratio of ages of A and B is 4:5 and A is 20, what is B's age?",
+    "options": ["22", "24", "25", "26"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose correct sentence.",
+    "options": [
+      "Neither of them are ready.",
+      "Neither of them is ready.",
+      "Neither them is ready.",
+      "Neither them are ready."
+    ],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 8% of a number is 64, find the number.",
+    "options": ["700", "750", "800", "850"],
+    "answer": 2,
+    "section": "Quant"
+  },
+
+  {
+    "question": "Find next: 1, 1, 2, 3, 5, 8, ?",
+    "options": ["11", "12", "13", "14"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If a shopkeeper marks 20% above cost price and gives 10% discount, what is overall profit?",
+    "options": ["6%", "7%", "8%", "9%"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose correct preposition: She is fond ______ music.",
+    "options": ["of", "for", "with", "at"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 5 workers complete a task in 12 days, how many days will 10 workers take?",
+    "options": ["5", "6", "7", "8"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find missing: 10, 20, 40, 80, ?",
+    "options": ["120", "140", "160", "180"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+
+  {
+    "question": "If the sum of two numbers is 50 and their difference is 10, find the larger number.",
+    "options": ["25", "30", "35", "40"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose correct antonym of 'Expand'.",
+    "options": ["Grow", "Increase", "Shrink", "Spread"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If a man walks at 5 km/h for 3 hours, distance covered?",
+    "options": ["10 km", "12 km", "15 km", "18 km"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find next: 4, 9, 16, 25, ?",
+    "options": ["30", "36", "40", "49"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose correct article: He is ______ honest man.",
+    "options": ["a", "an", "the", "no article"],
+    "answer": 1,
+    "section": "English"
+  }
+]

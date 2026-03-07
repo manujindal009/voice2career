@@ -4,6 +4,8 @@ import softwareData from "@/data/software.json";
 import { getRandomQuestions } from "@/utils/getRandomQuestions";
 import { initAnswers } from "@/utils/initAnswers";
 import { saveTestResult } from "@/lib/saveTestResult";
+import { signOut } from "firebase/auth";
+import { auth } from "@/lib/firebase";
 
 type Question = {
   id: number;
@@ -13,6 +15,12 @@ type Question = {
 
 export default function Test() {
   const navigate = useNavigate();
+
+  // ✅ LOGOUT FUNCTION (YAHAN ADD KIYA)
+  const handleLogout = async () => {
+    await signOut(auth);
+    navigate("/login");
+  };
 
   const questions: Question[] = useMemo(
     () => getRandomQuestions(softwareData.questions, 10),
@@ -30,21 +38,25 @@ export default function Test() {
   };
 
   const handleSubmit = async () => {
-  const attempted = answers.filter(a => a.trim() !== "").length;
+    const attempted = answers.filter((a) => a.trim() !== "").length;
 
-  await saveTestResult(questions.length, attempted);
+    await saveTestResult(questions.length, attempted);
 
-  navigate("/result", {
-    state: {
-      total: questions.length,
-      attempted,
-    },
-  });
-};
-
+    navigate("/result", {
+      state: {
+        total: questions.length,
+        attempted,
+      },
+    });
+  };
 
   return (
     <div style={{ padding: 24, maxWidth: 900, margin: "auto" }}>
+      {/* 🔴 LOGOUT BUTTON */}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <button onClick={handleLogout}>Logout</button>
+      </div>
+
       <h1>{softwareData.field} – Practice Test</h1>
 
       {questions.map((q, i) => (

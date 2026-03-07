@@ -1,35 +1,251 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import StudyFolder from "@/pages/StudyFolder";
+import { AuthProvider } from "@/context/AuthContext";
+import ProtectedRoute from "@/components/ProtectedRoute";
+import StudyTopic from "@/pages/StudyTopic";
+import LandingPage from "@/pages/LandingPage";
+//import AdminAnalytics from "@/pages/AdminAnalytics";
+import Login from "@/pages/Login";
+//import AdminDashboard from "@/pages/AdminDashboard";
+import Marksheet from "@/pages/Marksheet";
+import Signup from "@/pages/Signup";
+import AdminLayout from "@/components/AdminLayout";
+import { lazy, Suspense } from "react";
+//import Dashboard from "@/pages/Dashboard";
+// import InterviewApp from "@/pages/InterviewApp";
+// import InterviewHistory from "@/pages/InterviewHistory";
+// import AdminUsers from "@/pages/AdminUsers";
+// import MockTests from "@/pages/MockTests";
+// import Profile from "@/pages/Profile";
+// import MockTestRunner from "@/pages/MockTestRunner";
+// import AdminRequests from "@/pages/AdminRequests";
+import InterviewDetails from "@/pages/InterviewDetails";
+ import InterviewCompleted from "@/pages/InterviewCompleted";
+//import StudyMaterials from "@/pages/StudyMaterials";
+import StudyReader from "@/pages/StudyReader";
+import Result from "@/pages/Result";
+import NotFound from "@/pages/NotFound";
+import { STUDY_FOLDERS } from "./study-materials";
+//import Chatbot from "@/pages/Chatbot";
 
-import Index from "./pages/Index";
-import Test from "./pages/Test";
-import Result from "./pages/Result";
-import PhoneLogin from "./pages/PhoneLogin";
-import NotFound from "./pages/NotFound";
 
+const Dashboard = lazy(() => import("@/pages/Dashboard"));
+const InterviewApp = lazy(() => import("@/pages/InterviewApp"));
+const InterviewHistory = lazy(() => import("@/pages/InterviewHistory"));
+const MockTests = lazy(() => import("@/pages/MockTests"));
+const Profile = lazy(() => import("@/pages/Profile"));
+const MockTestRunner = lazy(() => import("@/pages/MockTestRunner"));
+const AdminRequests = lazy(() => import("@/pages/AdminRequests"));
+const AdminUsers = lazy(() => import("@/pages/AdminUsers"));
+const AdminAnalytics = lazy(() => import("@/pages/AdminAnalytics"));
+const AdminDashboard = lazy(() => import("@/pages/AdminDashboard"));
+const StudyMaterials = lazy(() => import("@/pages/StudyMaterials"));
+const Chatbot = lazy(() => import("@/pages/Chatbot"));
 const queryClient = new QueryClient();
+
+
 
 export default function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
+      <BrowserRouter>
+  <AuthProvider>
+    <Suspense fallback={<div className="p-10">Loading...</div>}>
+      <Routes>
+            {/* 🌐 PUBLIC */}
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
 
-        <BrowserRouter>
-          <Routes>
-  <Route path="/" element={<Index />} />
-  <Route path="/phone-login" element={<PhoneLogin />} />
-  <Route path="/test" element={<Test />} />
-  <Route path="/result" element={<Result />} />
-  <Route path="*" element={<NotFound />} />
-</Routes>
+            {/* 📊 DASHBOARD */}
+            <Route
+              path="/app"
+              element={
+                <ProtectedRoute>
+                  <Dashboard />
+                </ProtectedRoute>
+              }
+            />
 
-        </BrowserRouter>
-      </TooltipProvider>
+            {/* 🎤 INTERVIEW */}
+            <Route
+              path="/interview"
+              element={
+                <ProtectedRoute>
+                  <InterviewApp />
+                </ProtectedRoute>
+              }
+            />
+
+            <Route
+              path="/interview-completed"
+              element={
+                <ProtectedRoute>
+                  <InterviewCompleted />
+                </ProtectedRoute>
+              }
+            />
+
+
+            {/* 📚 STUDY MATERIALS (FINAL SINGLE SOURCE) */}
+            <Route
+              path="/study-materials"
+              element={
+                <ProtectedRoute>
+                  <StudyMaterials />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+  path="/study-materials/:folderId"
+  element={
+    <ProtectedRoute>
+      <StudyFolder />
+    </ProtectedRoute>
+  }
+/>
+
+
+
+            {/* 📄 PDF / READER */}
+            <Route
+              path="/study/read"
+              element={
+                <ProtectedRoute>
+                  <StudyReader />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+  path="/study-materials/:folderId/:topicId"
+  element={
+    <ProtectedRoute>
+      <StudyTopic />
+    </ProtectedRoute>
+  }
+/>
+
+
+            {/* 📜 HISTORY */}
+            <Route
+              path="/history"
+              element={
+                <ProtectedRoute>
+                  <InterviewHistory />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+  path="/mock-tests"
+  element={
+    <ProtectedRoute>
+      <MockTests />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/admin"
+  element={
+    <ProtectedRoute>
+      <AdminLayout />
+    </ProtectedRoute>
+  }
+>
+  <Route
+  index
+  element={<AdminDashboard />}
+/>
+  <Route
+    path="requests"
+    element={<AdminRequests />}
+  />
+  <Route
+    path="users"
+    element={<AdminUsers />}
+  />
+  <Route
+    path="analytics"
+    element={<AdminAnalytics />}
+  />
+</Route>
+
+<Route
+  path="/mock-tests/:id"
+  element={
+    <ProtectedRoute>
+      <MockTestRunner />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/mock-tests/:id/start"
+  element={
+    <ProtectedRoute>
+      <MockTestRunner />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/profile"
+  element={
+    <ProtectedRoute>
+      <Profile />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/assistant"
+  element={
+    <ProtectedRoute>
+      <Chatbot />
+    </ProtectedRoute>
+  }
+/>
+
+<Route
+  path="/marksheet/:testId"
+  element={
+    <ProtectedRoute>
+      <Marksheet />
+    </ProtectedRoute>
+  }
+/>
+
+
+
+            <Route
+              path="/history/:id"
+              element={
+                <ProtectedRoute>
+                  <InterviewDetails />
+                </ProtectedRoute>
+              }
+            />
+
+
+
+            {/* 📈 RESULT */}
+            <Route
+              path="/result"
+              element={
+                <ProtectedRoute>
+                  <Result />
+                </ProtectedRoute>
+              }
+            />
+
+
+            {/* ❌ FALLBACK */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          </Suspense>
+        </AuthProvider>
+      </BrowserRouter>
     </QueryClientProvider>
   );
 }
