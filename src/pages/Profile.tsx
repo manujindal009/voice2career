@@ -1,7 +1,15 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { signOut, deleteUser } from "firebase/auth";
-import { doc, deleteDoc, getDoc, updateDoc, collection, getDocs } from "firebase/firestore";
+import { 
+  doc, 
+  deleteDoc, 
+  getDoc, 
+  updateDoc, 
+  collection, 
+  getDocs,
+  addDoc
+} from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
 import { useAuth } from "@/context/AuthContext";
 
@@ -14,6 +22,8 @@ export default function Profile() {
   const [location, setLocation] = React.useState("");
   const [headline, setHeadline] = React.useState("");
 const [bio, setBio] = React.useState("");
+const [linkedin, setLinkedin] = React.useState("");
+const [github, setGithub] = React.useState("");
 const [mockTests, setMockTests] = React.useState(0);
 const [interviews, setInterviews] = React.useState(0);
 const [avgAccuracy, setAvgAccuracy] = React.useState(0);
@@ -78,7 +88,10 @@ setName(data.name || "");
 setLocation(data.location || "");
 setHeadline(data.headline || "");
 setPlan(data.plan || "Beginner");
+
 setBio(data.bio || "");
+setLinkedin(data.linkedin || "");
+setGithub(data.github || "");
 // 🔥 MOCK TESTS LOAD
 const mockSnap = await getDocs(
   collection(db, "users", user.uid, "mockTests")
@@ -191,28 +204,25 @@ React.useEffect(() => {
 
 }, [streak, mockTests, avgAccuracy]);
 
-const handleProUpgrade = () => {
+const handleProUpgrade = async () => {
   if (!user) return;
 
-  const subject = encodeURIComponent("Pro Plan Subscription Request");
+  try {
 
-  const body = encodeURIComponent(`
-Hello Voice2Career Team,
+    await addDoc(collection(db, "subscriptionRequests"), {
+      name: name,
+      email: user.email,
+      userId: user.uid,
+      plan: "Pro",
+      status: "pending",
+      createdAt: new Date()
+    });
 
-I would like to subscribe to the Pro Plan (₹149/month).
+    alert("Subscription request sent to admin");
 
-User Details:
-Name: ${name}
-Email: ${user?.email}
-
-Please share payment instructions.
-
-Thanks,
-${name}
-`);
-
-  window.location.href =
-    `mailto:voice2career@yahoo.com?subject=${subject}&body=${body}`;
+  } catch (err) {
+    console.error("REQUEST ERROR:", err);
+  }
 };
 
   return (
@@ -311,13 +321,31 @@ ${name}
             </h2>
 
             <div className="flex flex-col gap-3">
-              <button className="bg-blue-50/70 border border-blue-100 text-blue-600 px-4 py-2 rounded-lg">
-                LinkedIn
-              </button>
+              <button
+  disabled={!linkedin}
+  onClick={() => window.open(linkedin, "_blank")}
+  className={`px-4 py-2 rounded-lg border transition
+    ${
+      linkedin
+        ? "bg-blue-50 border-blue-100 text-blue-600 hover:bg-blue-100"
+        : "bg-gray-100 text-gray-400 cursor-not-allowed"
+    }`}
+>
+  {linkedin ? "LinkedIn" : "LinkedIn (Not Connected)"}
+</button>
 
-              <button className="bg-gray-100 border px-4 py-2 rounded-lg">
-                GitHub
-              </button>
+<button
+  disabled={!github}
+  onClick={() => window.open(github, "_blank")}
+  className={`px-4 py-2 rounded-lg border transition
+    ${
+      github
+        ? "bg-gray-100 hover:bg-gray-200"
+        : "bg-gray-100 text-gray-400 cursor-not-allowed"
+    }`}
+>
+  {github ? "GitHub" : "GitHub (Not Connected)"}
+</button>
             </div>
           </div>
         </div>
@@ -488,11 +516,12 @@ ${name}
         ₹149 <span className="text-sm font-normal">/month</span>
       </p>
      <button
+  disabled={plan === "Pro"}
   onClick={handleProUpgrade}
-  className={`mt-6 w-full py-2 rounded-lg ${
+  className={`mt-6 w-full py-2 rounded-lg transition ${
     plan === "Pro"
-      ? "bg-blue-600 text-white"
-      : "bg-gray-200"
+      ? "bg-blue-600 text-white cursor-not-allowed"
+      : "bg-gray-200 hover:bg-gray-300"
   }`}
 >
   {plan === "Pro" ? "Current Plan" : "Upgrade to Pro"}
@@ -591,6 +620,22 @@ ${name}
   className="w-full border px-3 py-2 rounded-lg"
   placeholder="About"
 />
+<input
+  value={linkedin}
+  onChange={(e) => setLinkedin(e.target.value)}
+  className="w-full border px-3 py-2 rounded-lg"
+  placeholder="LinkedIn Profile URL"
+/>
+
+<input
+  value={github}
+  onChange={(e) => setGithub(e.target.value)}
+  className="w-full border px-3 py-2 rounded-lg"
+  placeholder="GitHub Profile URL"
+/>
+
+
+
     <div className="flex justify-end gap-3"> 
       <button onClick={() => setEditing(false)} className="border px-4 py-2 rounded-lg" > Cancel </button> 
  <button
@@ -606,6 +651,8 @@ ${name}
     location: location,
     headline: headline,
     bio: bio,
+    linkedin: linkedin,
+    github: github,
     //photoURL: uploadedURL,
   });
   setEditing(false);

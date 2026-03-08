@@ -122,8 +122,15 @@ export default function AdminUsers() {
           </thead>
 
           <tbody>
+            {users.length === 0 && (
+<tr>
+<td colSpan={5} className="text-center p-8 text-gray-400">
+No users found
+</td>
+</tr>
+)}
 
-            {users.filter(u => u.email.toLowerCase().includes(search.toLowerCase())).map((user) => (
+            {users.filter(u => (u.email || "").toLowerCase().includes(search.toLowerCase())).map((user) => (
 
               <tr
                 key={user.id}

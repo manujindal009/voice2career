@@ -8,19 +8,19 @@ export default function MockTestIntro() {
 
   const configMap: any = {
     "easy-medium": {
-      title: "Easy → Medium Mock Test",
-      time: "60 minutes",
+      title: "Easy Mock Test",
+      time: "10 minutes",
       questions: 25,
     },
     medium: {
       title: "Medium Mock Test",
-      time: "75 minutes",
+      time: "15 minutes",
       questions: 30,
     },
     hard: {
       title: "Hard Mock Test",
-      time: "90 minutes",
-      questions: 35,
+      time: "20 minutes",
+      questions: 30,
     },
   };
 

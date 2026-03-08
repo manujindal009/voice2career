@@ -5,15 +5,15 @@ const TESTS = [
   {
     id: "easy-medium",
     title: "Easy Level Mock Test",
-    duration: 15,
-    questions: 25,
+    duration: 10,
+    questions: 30,
     level: "Easy",
     color: "green",
   },
   {
     id: "medium-hard",
     title: "Medium Level Mock Test",
-    duration: 20,
+    duration: 15,
     questions: 30,
     level: "Medium",
     color: "yellow",
@@ -21,7 +21,7 @@ const TESTS = [
   {
     id: "hard",
     title: "Hard Level Mock Test",
-    duration: 30,
+    duration: 20,
     questions: 30,
     level: "Hard",
     color: "red",

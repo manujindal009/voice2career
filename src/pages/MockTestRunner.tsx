@@ -2,13 +2,15 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 //import { generatePaper } from "@/utils/generatePaper";
 import { Button } from "@/components/ui/button";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs,addDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
+import { useAuth } from "@/context/AuthContext";
 console.log("🔥 MOCK TEST RUNNER FILE LOADED");
+
 const TEST_TIME_MAP: any = {
-  "easy-medium": 10 * 60, // 10 min
-  medium: 15 * 60,        // 15 min
-  hard: 20 * 60,          // 20 min
+  "easy-medium": 10 * 60,  // 10 min
+  "medium-hard": 15 * 60,  // 15 min
+  "hard": 20 * 60,         // 20 min
 };
 
 
@@ -16,6 +18,7 @@ const TEST_TIME_MAP: any = {
 export default function MockTestRunner() {
   const { id } = useParams();
   const navigate = useNavigate();
+  const { user } = useAuth();
 
   const [questions, setQuestions] = useState<any[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -25,6 +28,8 @@ const [loading, setLoading] = useState(true);
 
 
   const [timeLeft, setTimeLeft] = useState(0);
+  const [warned, setWarned] = useState(false);
+  const [showWarning, setShowWarning] = useState(false);
 
 
 //   useEffect(() => {
@@ -90,10 +95,16 @@ useEffect(() => {
 
   const timer = setInterval(() => {
     setTimeLeft((t) => {
+
+      if (t === 300) {
+        setShowWarning(true);
+      }
+
       if (t <= 1) {
-        submitTest(); // auto submit
+        submitTest();
         return 0;
       }
+
       return t - 1;
     });
   }, 1000);
@@ -137,21 +148,61 @@ const getUnansweredCount = () => {
   return answers.filter(a => a === -1).length;
 };
 
-  const submitTest = () => {
-    let score = 0;
-    questions.forEach((q, i) => {
-      if (answers[i] === q.answer) score++;
-    });
-    navigate("/result", {
-      state: {
+  const submitTest = async () => {
+if (!user) return;
+  let score = 0;
+
+  let weakCount: any = {};
+
+  questions.forEach((q, i) => {
+
+    if (answers[i] === q.answer) {
+      score++;
+    } else {
+
+      const section = q.section || "General";
+
+      weakCount[section] = (weakCount[section] || 0) + 1;
+
+    }
+
+  });
+
+  const accuracy = Math.round((score / questions.length) * 100);
+
+  const weakestTopic =
+    Object.keys(weakCount).length > 0
+      ? Object.keys(weakCount).reduce((a, b) =>
+          weakCount[a] >= weakCount[b] ? a : b
+        )
+      : "None";
+
+  if (user) {
+
+    await addDoc(
+      collection(db, "users", user.uid, "mockTests"),
+      {
         score,
         total: questions.length,
-        testId: id,
-        questions,
-        answers,
-      },
-    });
-  };
+        accuracy,
+        weakSection: weakestTopic,
+        createdAt: new Date(),
+      }
+    );
+
+  }
+
+  navigate("/result", {
+    state: {
+      score,
+      total: questions.length,
+      testId: id,
+      questions,
+      answers,
+    },
+  });
+
+};
   const handleSubmit = () => {
   const unanswered = answers.filter(a => a === -1).length;
   const marked = review.filter(r => r).length;
@@ -176,22 +227,34 @@ Do you want to submit the test?
   return (
     <div className="min-h-screen bg-gray-50">
 
-      {/* HEADER */}
      {/* TIMER HEADER */}
 <div className="sticky top-0 bg-white border-b z-10">
-  <div className="max-w-4xl mx-auto px-6 py-4">
+  <div className="max-w-7xl mx-auto px-6 py-4">
 
-    {/* TOP ROW */}
+
     <div className="flex justify-between mb-2">
-      <span className="text-sm font-semibold capitalize">
-        {question.section}
-      </span>
+  <span className="text-sm font-semibold capitalize">
+    {question.section}
+  </span>
 
-      <span className="text-sm font-mono">
-        {Math.floor(timeLeft / 60)}:
-        {String(timeLeft % 60).padStart(2, "0")}
-      </span>
-    </div>
+ <span
+  className={`text-sm font-mono px-3 py-1 rounded-lg ${
+    timeLeft <= 300
+      ? "bg-red-100 text-red-600 font-bold"
+      : "bg-gray-100"
+  }`}
+>
+    {Math.floor(timeLeft / 60)}:
+    {String(timeLeft % 60).padStart(2, "0")}
+  </span>
+</div>
+
+{showWarning && (
+  <div className="text-xs text-red-600 font-semibold mb-2">
+    ⚠️ Only 5 minutes remaining
+  </div>
+)}
+
     <p className="text-xs text-gray-600 mt-2">
   Answered: {answers.filter(a => a !== -1).length} / {questions.length}
 </p>
@@ -199,13 +262,15 @@ Do you want to submit the test?
 
 
     {/* PROGRESS BAR */}
-    <div className="h-2 bg-gray-200 rounded">
+    <div className="h-3 bg-gray-200 rounded-full overflow-hidden">
       <div
-        className="h-2 bg-green-600 rounded transition-all"
+        className="h-3 bg-gradient-to-r from-green-500 to-green-600 rounded-full transition-all"
         style={{
           width: `${
-            (timeLeft / (TEST_TIME_MAP[id!] || 3600)) * 100
-          }%`,
+  ((TEST_TIME_MAP[id!] || 3600) - timeLeft) /
+  (TEST_TIME_MAP[id!] || 3600) *
+  100
+}%`,
         }}
       />
     </div>
@@ -214,38 +279,34 @@ Do you want to submit the test?
 </div>
 
 {/* QUESTION PALETTE */}
-<div className="flex flex-wrap gap-4 text-xs mb-4">
+<div className="flex justify-center flex-wrap gap-6 text-sm mb-6 mt-4">
   <Legend color="bg-green-600" label="Current" />
   <Legend color="bg-blue-500" label="Answered" />
   <Legend color="bg-yellow-400" label="Marked for Review" />
   <Legend color="bg-gray-200" label="Not Visited" />
 </div>
 
-<div className="max-w-4xl mx-auto mt-6 mb-4">
-  <div className="bg-white border rounded-2xl p-4 shadow-sm">
-    <p className="text-sm font-semibold mb-3">
-      Question Palette
-    </p>
-
-    <div className="grid grid-cols-5 sm:grid-cols-8 gap-2">
-      {questions.map((_, i) => (
-        <button
-          key={i}
-          onClick={() => setCurrentIndex(i)}
-          className={`h-9 w-9 rounded text-sm font-medium transition
-            ${getPaletteColor(i)}`}
-        >
-          {i + 1}
-        </button>
-      ))}
-    </div>
-  </div>
-</div>
-
 
       {/* QUESTION */}
-      <div className="max-w-4xl mx-auto mt-10">
-        <div className="bg-white border rounded-2xl p-8 shadow-sm">
+      <div className="max-w-[1600px] mx-auto mt-8 grid grid-cols-[1fr_2fr_1fr] gap-8 items-stretch px-6">
+        {/* LEFT SIDE - ROUGH NOTES */}
+<div className="col-start-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
+
+<p className="text-base font-semibold mb-3 text-gray-700">
+Rough Notes
+</p>
+
+<textarea
+placeholder="Write your rough work here..."
+className="w-full h-[500px] border border-gray-300 rounded-lg p-3 text-sm outline-none resize-none"
+/>
+
+<p className="text-xs text-gray-400 mt-2">
+Notes will not be saved after the test.
+</p>
+
+</div>
+        <div className="col-start-2 bg-white border border-gray-200 rounded-2xl p-10 shadow-md h-full">
 
           <h2 className="text-lg font-semibold mb-6">
             {question.question}
@@ -256,12 +317,12 @@ Do you want to submit the test?
               <button
                 key={i}
                 onClick={() => selectOption(i)}
-                className={`w-full text-left p-4 rounded-xl border transition
-                  ${
-                    selected === i
-                      ? "bg-blue-50 border-blue-500"
-                      : "hover:bg-gray-50"
-                  }`}
+                className={`w-full text-left p-4 rounded-xl border border-gray-200 transition hover:border-blue-400 hover:bg-blue-50
+  ${
+    selected === i
+      ? "bg-blue-50 border-blue-500"
+      : ""
+  }`}
               >
                 <b>{String.fromCharCode(65 + i)}.</b> {opt}
               </button>
@@ -273,36 +334,62 @@ Do you want to submit the test?
     copy[currentIndex] = !copy[currentIndex];
     setReview(copy);
   }}
-  className="mt-4 text-sm font-medium text-yellow-600"
+  className={`mt-4 flex items-center gap-2 text-sm font-medium transition ${
+    review[currentIndex]
+      ? "text-yellow-600"
+      : "text-gray-500 hover:text-yellow-600"
+  }`}
 >
-  ⭐ Mark for Review
+  {review[currentIndex] ? "⭐ Marked for Review" : "☆ Mark for Review"}
 </button>
+<div className="flex justify-between mt-8">
+<Button
+variant="outline"
+className="px-6 py-2"
+disabled={currentIndex === 0}
+onClick={() => setCurrentIndex((i) => i - 1)}
+>
+← Previous
+</Button>
+
+<Button
+className="px-6 py-2"
+onClick={
+isLast
+? handleSubmit
+: () => setCurrentIndex((i) => i + 1)
+}
+>
+{isLast ? "Submit Test" : "Next →"}
+</Button>
+</div>
 
 
         </div>
+        <div className="col-start-3 bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
+
+<p className="text-base font-semibold mb-4 text-gray-700">
+Question Palette
+</p>
+
+<div className="grid grid-cols-5 gap-4 justify-items-center">
+  {questions.map((_, i) => (
+    <button
+      key={i}
+      onClick={() => setCurrentIndex(i)}
+      className={`h-10 w-10 rounded-lg text-sm font-semibold shadow-sm hover:scale-105 transition ${getPaletteColor(i)}`}
+    >
+      {i + 1}
+    </button>
+  ))}
+</div>
+
+</div>
       </div>
+      
     
       {/* FOOTER */}
-      <div className="max-w-4xl mx-auto flex justify-between mt-8 px-2">
-        <Button
-          variant="outline"
-          disabled={currentIndex === 0}
-          onClick={() => setCurrentIndex((i) => i - 1)}
-        >
-          Previous
-        </Button>
-
-        <Button
-  onClick={
-    isLast
-      ? handleSubmit
-      : () => setCurrentIndex((i) => i + 1)
-  }
->
-  {isLast ? "Submit Test" : "Next"}
-</Button>
-
-      </div>
+      
     </div>
   );
 }

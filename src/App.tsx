@@ -5,29 +5,22 @@ import { AuthProvider } from "@/context/AuthContext";
 import ProtectedRoute from "@/components/ProtectedRoute";
 import StudyTopic from "@/pages/StudyTopic";
 import LandingPage from "@/pages/LandingPage";
-//import AdminAnalytics from "@/pages/AdminAnalytics";
 import Login from "@/pages/Login";
-//import AdminDashboard from "@/pages/AdminDashboard";
 import Marksheet from "@/pages/Marksheet";
 import Signup from "@/pages/Signup";
 import AdminLayout from "@/components/AdminLayout";
 import { lazy, Suspense } from "react";
-//import Dashboard from "@/pages/Dashboard";
-// import InterviewApp from "@/pages/InterviewApp";
-// import InterviewHistory from "@/pages/InterviewHistory";
-// import AdminUsers from "@/pages/AdminUsers";
-// import MockTests from "@/pages/MockTests";
-// import Profile from "@/pages/Profile";
-// import MockTestRunner from "@/pages/MockTestRunner";
-// import AdminRequests from "@/pages/AdminRequests";
+import About from "@/pages/About";
+import VerifyEmail from "@/pages/VerifyEmail";
+import AuthGuard from "@/components/AuthGuard";
+import ResetPassword from "./pages/ResetPassword";
 import InterviewDetails from "@/pages/InterviewDetails";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
  import InterviewCompleted from "@/pages/InterviewCompleted";
-//import StudyMaterials from "@/pages/StudyMaterials";
 import StudyReader from "@/pages/StudyReader";
 import Result from "@/pages/Result";
 import NotFound from "@/pages/NotFound";
-//import { STUDY_FOLDERS } from "./study-materials";
-//import Chatbot from "@/pages/Chatbot";
 
 
 const Dashboard = lazy(() => import("@/pages/Dashboard"));
@@ -83,7 +76,8 @@ export default function App() {
                 </ProtectedRoute>
               }
             />
-
+<Route path="/privacy" element={<Privacy />} />
+<Route path="/terms" element={<Terms />} />
             <Route
               path="/interview-completed"
               element={
@@ -92,7 +86,7 @@ export default function App() {
                 </ProtectedRoute>
               }
             />
-
+<Route path="/verify-email" element={<VerifyEmail />} />
 
             {/* 📚 STUDY MATERIALS (FINAL SINGLE SOURCE) */}
             <Route
@@ -132,6 +126,8 @@ export default function App() {
   }
 />
 
+<Route path="/reset-password" element={<ResetPassword />} />
+<Route path="/about" element={<About />} />
 
             {/* 📜 HISTORY */}
             <Route
@@ -176,6 +172,17 @@ export default function App() {
     element={<AdminAnalytics />}
   />
 </Route>
+<Route path="/" element={<LandingPage />} />
+<Route path="/login" element={<Login />} />
+<Route path="/signup" element={<Signup />} />
+<Route
+  path="/app"
+  element={
+    <AuthGuard>
+      <Dashboard />
+    </AuthGuard>
+  }
+/>
 
 <Route
   path="/mock-tests/:id"

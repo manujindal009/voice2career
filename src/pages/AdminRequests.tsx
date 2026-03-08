@@ -3,6 +3,7 @@ import { auth } from "@/lib/firebase";
 import { useAuth } from "@/context/AuthContext";
 import { Navigate } from "react-router-dom";
 import { db } from "@/lib/firebase";
+  import { setDoc } from "firebase/firestore";
 import {
   collection,
   getDocs,
@@ -53,27 +54,46 @@ export default function AdminRequests() {
   }, []);
 
   // 🔹 APPROVE USER
-  const approveUser = async (req: any) => {
 
-    try {
+const approveUser = async (req: any) => {
+  try {
 
-      await updateDoc(doc(db, "users", req.userId), {
-        plan: "Pro"
-      });
+    // 🔹 find user by email
+    const userSnap = await getDocs(collection(db, "users"));
 
-      await updateDoc(doc(db, "subscriptionRequests", req.id), {
-        status: "approved"
-      });
+    let userDocId: string | null = null;
 
-      alert("User upgraded to Pro");
+    userSnap.forEach((docItem) => {
+      const data = docItem.data();
 
-      loadRequests();
+      if (data.email === req.email) {
+        userDocId = docItem.id;
+      }
+    });
 
-    } catch (err) {
-      console.error(err);
+    if (!userDocId) {
+      alert("User not found in users collection");
+      return;
     }
 
-  };
+    // 🔹 update user plan
+    await updateDoc(doc(db, "users", userDocId), {
+      plan: "Pro"
+    });
+
+    // 🔹 update request status
+    await updateDoc(doc(db, "subscriptionRequests", req.id), {
+      status: "approved"
+    });
+
+    alert("User upgraded to Pro");
+
+    loadRequests();
+
+  } catch (err) {
+    console.error("APPROVE ERROR:", err);
+  }
+};
 
   // 🔹 REJECT USER
   const rejectUser = async (req: any) => {

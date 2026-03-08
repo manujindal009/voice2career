@@ -4,8 +4,10 @@ type ChartPoint = {
 
 export default function PerformanceChart({
   data,
+  title = "interviews",
 }: {
   data: ChartPoint[];
+  title?: string;
 }) {
   if (!data || data.length === 0) {
     return (
@@ -54,8 +56,8 @@ export default function PerformanceChart({
       {/* HEADER */}
       <div className="flex items-center justify-between mb-4">
         <h3 className="font-semibold">
-          Your progress over the last {data.length} interviews
-        </h3>
+  Your progress over the last {data.length} {title}
+</h3>
 
         <span
           className={`text-xs px-3 py-1 rounded-full ${
@@ -152,8 +154,8 @@ export default function PerformanceChart({
         {data.map((d, i) => (
           <div key={i}>
             <p className="text-xs text-gray-500">
-              Interview {i + 1}
-            </p>
+  {title === "mock tests" ? "Test" : "Interview"} {i + 1}
+</p>
             <p className="font-semibold text-gray-900">
               {d.score}%
             </p>

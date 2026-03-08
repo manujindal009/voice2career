@@ -6,6 +6,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/context/AuthContext";
+import { sendEmailVerification } from "firebase/auth";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -16,6 +17,8 @@ export default function Login() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [info, setInfo] = useState("");
+  const [showResend, setShowResend] = useState(false);
+const [resending, setResending] = useState(false);
 
   // 🔥 already logged-in & verified user → dashboard
   useEffect(() => {
@@ -23,6 +26,7 @@ export default function Login() {
       navigate("/app", { replace: true });
     }
   }, [user, authLoading]);
+
 
   const login = async () => {
     if (!email || !password) {
@@ -35,7 +39,7 @@ export default function Login() {
       setError("");
       setInfo("");
 
-      await signInWithEmailAndPassword(auth, email, password);
+      //await signInWithEmailAndPassword(auth, email, password);
 
       // 🔥 EMAIL VERIFICATION CHECK
 const cred = await signInWithEmailAndPassword(auth, email, password);
@@ -47,10 +51,13 @@ if (!cred.user.emailVerified) {
 
   await auth.signOut();
 
-  setError("Please verify your email before logging in.(check SPAM also)");
+  setError(
+    "Please verify your email before logging in (check spam folder)."
+  );
+
+  setShowResend(true);
 
   return;
-
 }
 
       const user = auth.currentUser;
@@ -73,23 +80,50 @@ if (!cred.user.emailVerified) {
 
   // 🔥 FORGOT PASSWORD (UNCHANGED)
   const forgotPassword = async () => {
-    if (!email) {
-      setError("Please enter your email to reset password");
-      return;
-    }
+  if (!email) {
+    setError("Please enter your email to reset password");
+    return;
+  }
 
-    try {
-      setLoading(true);
-      setError("");
-      setInfo("");
-      await sendPasswordResetEmail(auth, email);
-      setInfo("Password reset link has been sent to your email");
-    } catch {
-      setError("Failed to send reset email. Check your email address.");
-    } finally {
-      setLoading(false);
-    }
-  };
+  try {
+    setLoading(true);
+    setError("");
+    setInfo("");
+
+    setInfo("Password reset link has been sent to your email");
+
+  } catch {
+    setError("Failed to send reset email. Check your email address.");
+  } finally {
+    setLoading(false);
+  }
+};
+  const resendVerification = async () => {
+
+  if (!email || !password) {
+    setError("Enter email and password first");
+    return;
+  }
+
+  try {
+
+    setResending(true);
+
+    const cred = await signInWithEmailAndPassword(auth, email, password);
+
+    await sendEmailVerification(cred.user);
+
+    await auth.signOut();
+
+    setInfo("Verification email sent again. Please check your inbox.");
+
+  } catch {
+    setError("Unable to send verification email.");
+  }
+
+  setResending(false);
+
+};
 
   const loginWithGoogle = async () => {
   try {
@@ -141,6 +175,20 @@ if (!cred.user.emailVerified) {
             {error}
           </div>
         )}
+
+        {showResend && (
+  <div className="text-center mb-4">
+
+    <button
+      onClick={resendVerification}
+      disabled={resending}
+      className="text-blue-600 text-sm hover:underline"
+    >
+      {resending ? "Sending..." : "Resend verification email"}
+    </button>
+
+  </div>
+)}
 
         {/* INFO */}
         {info && (

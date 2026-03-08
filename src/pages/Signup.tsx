@@ -26,10 +26,10 @@ export default function Signup() {
 
   // 🔥 already logged-in user → dashboard
   useEffect(() => {
-    if (!authLoading && user) {
-      navigate("/app", { replace: true });
-    }
-  }, [user, authLoading]);
+  if (!authLoading && user && user.emailVerified) {
+    navigate("/app", { replace: true });
+  }
+}, [user, authLoading]);
 
   const rules = {
     length: password.length >= 9,
@@ -79,15 +79,19 @@ export default function Signup() {
   createdAt: new Date(),
 });
 
-      // 🔥 SEND VERIFICATION EMAIL
-      await sendEmailVerification(cred.user);
+// 🔥 SEND VERIFICATION EMAIL
+await sendEmailVerification(cred.user);
 
-      // 🔐 Logout until verified
-     // await auth.signOut();
+// 🔥 FORCE LOGOUT so user can't enter dashboard
+await auth.signOut();
 
-      setInfo(
-        "Verification email sent. Please verify your email before logging in."
-      );
+navigate("/login", {
+  state: {
+    message:
+      "Verification email sent. Please verify your email before logging in.(check spam also)"
+  }
+});
+
     } catch (err: any) {
       setError(err.message || "Signup failed");
     } finally {

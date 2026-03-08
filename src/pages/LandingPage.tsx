@@ -214,10 +214,36 @@ export default function LandingPage() {
             © 2026 voice2career. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
-            <a href="#" className="hover:text-gray-300">Privacy</a>
-            <a href="#" className="hover:text-gray-300">Terms</a>
-            <a href="#" className="hover:text-gray-300">Contact</a>
-          </div>
+
+  <a
+    onClick={() => navigate("/about")}
+    className="hover:text-gray-300 cursor-pointer"
+  >
+    About
+  </a>
+
+  <a
+    onClick={() => navigate("/privacy")}
+    className="hover:text-gray-300 cursor-pointer"
+  >
+    Privacy
+  </a>
+
+  <a
+    onClick={() => navigate("/terms")}
+    className="hover:text-gray-300 cursor-pointer"
+  >
+    Terms
+  </a>
+
+  <a
+    href="mailto:voice2career@yahoo.com"
+    className="hover:text-gray-300"
+  >
+    Contact
+  </a>
+
+</div>
         </div>
       </footer>
     </div>

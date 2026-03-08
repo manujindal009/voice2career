@@ -361,28 +361,55 @@ ${username}`
         </div>
 
         {/* PERFORMANCE CHART */}
-        {chartData.length > 0 ? (
-          <PerformanceChart data={chartData} />
-        ) : (
-          <p className="text-sm text-gray-400 text-center">
-            No interview data yet. Start your first interview 🚀
-          </p>
-        )}
+        {/* INTERVIEW PROGRESS */}
+<div className="mt-16">
+  <h2 className="text-xl font-semibold mb-4">
+    Interview Progress
+  </h2>
+
+  {chartData.length > 0 ? (
+    <PerformanceChart
+      data={chartData}
+      title="interviews"
+    />
+  ) : (
+    <p className="text-sm text-gray-400 text-center">
+      No interview data yet. Start your first interview 🚀
+    </p>
+  )}
+</div>
 
         {/* MOCK TEST PROGRESS */}
+<div className="mt-16">
+  <h2 className="text-xl font-semibold mb-4">
+    Mock Test Progress
+  </h2>
+
+  {mockProgressData.length > 0 ? (
+    <PerformanceChart
+      data={mockProgressData}
+      title="mock tests"
+    />
+  ) : (
+    <p className="text-sm text-gray-400 text-center">
+      No mock test data yet. Attempt your first mock test 🚀
+    </p>
+  )}
+</div>
+
 {/* MOCK TEST HISTORY */}
 <div className="mt-16">
   <h2 className="text-xl font-semibold mb-6">
     Mock Test History
   </h2>
 
-  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
     {mockTests.length === 0 ? (
       <Card className="border-dashed">
         <CardContent className="p-6 flex items-center gap-4">
-          <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-red-50 text-red-600">
-            🎯
-          </div>
+          <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-gray-100 text-gray-600">
+  🎯
+</div>
           <div>
             <p className="font-semibold">
               No Mock Tests Yet
@@ -395,7 +422,7 @@ ${username}`
       </Card>
     ) : (
       Object.entries(groupedMockTests).map(
-  ([testId, attempts]: any) => {
+  ([testId, attempts]: [string, any[]]) => {
     const totalAttempts = attempts.length;
 
     const bestAccuracy = Math.max(
@@ -407,19 +434,33 @@ ${username}`
     return (
       <Card
         key={testId}
-        className="cursor-pointer hover:shadow-md transition"
+        className="cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-200"
         onClick={() => navigate(`/marksheet/${testId}`)}
       >
         <CardContent className="p-6 flex justify-between items-center">
           <div className="flex gap-4">
-            <div className="h-12 w-12 flex items-center justify-center rounded-xl bg-red-50 text-red-600">
-              🎯
-            </div>
+            <div
+  className={`h-12 w-12 flex items-center justify-center rounded-xl ${
+    testId === "easy-medium"
+      ? "bg-green-50 text-green-600"
+      : testId === "medium-hard"
+      ? "bg-yellow-50 text-yellow-600"
+      : "bg-red-50 text-red-600"
+  }`}
+>
+  🎯
+</div>
 
             <div>
-              <p className="font-semibold capitalize">
-                {testId.replace("-", " ")} Test
-              </p>
+              <p className="font-semibold">
+  {testId === "easy-medium"
+    ? "Easy Test"
+    : testId === "medium-hard"
+    ? "Medium Test"
+    : testId === "hard"
+    ? "Hard Test"
+    : testId}
+</p>
 
               <p className="text-sm text-gray-500">
                 Attempts: {totalAttempts}
@@ -449,7 +490,12 @@ ${username}`
 
 
         {/* QUICK ACTIONS */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mt-14">
+<div className="mt-16">
+  <h2 className="text-xl font-semibold mb-6">
+    Quick Actions
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
   <Action
     icon={<Video />}
     title="New Interview"
@@ -499,15 +545,7 @@ ${username}`
 )}
 
 </div>
-{/* MOCK TEST PROGRESS */}
-{mockProgressData.length > 1 && (
-  <div className="mt-16">
-    <h2 className="text-xl font-semibold mb-4">
-      Mock Test Progress
-    </h2>
-    <PerformanceChart data={mockProgressData} />
-  </div>
-)}
+</div>
 
       </div>
     </div>
