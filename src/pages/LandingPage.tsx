@@ -74,7 +74,7 @@ export default function LandingPage() {
       </nav>
 
       {/* HERO */}
-      <section className="flex-1 flex items-center justify-center px-6 pt-36 pb-20">
+      <section className="flex-1 flex items-center justify-center px-6 pt-36 pb-32">
         <div className="max-w-4xl mx-auto text-center space-y-10">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 border border-blue-500/30 text-blue-300 text-sm">
             <Sparkles className="h-4 w-4" />
@@ -87,7 +87,7 @@ export default function LandingPage() {
             <span className="text-white">Ace Your Career.</span>
           </h1>
 
-          <p className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto">
+         <p className="text-lg sm:text-xl text-gray-400 max-w-xl mx-auto"> 
             voice2career combines mock interviews with placement
             assistance to help you land your dream job.
           </p>
@@ -112,7 +112,7 @@ export default function LandingPage() {
             </Button>
           </div>
 
-          <div className="pt-12 border-t border-slate-800/50 grid sm:grid-cols-3 gap-8">
+          <div className="pt-12 grid sm:grid-cols-3 gap-8 opacity-90">
             <Stat value="100+" label="Users Placed Successfully" />
             <Stat value="95%" label="Interview Success Rate" />
             <Stat value="5" label="Partner Companies" />
@@ -121,7 +121,7 @@ export default function LandingPage() {
       </section>
 
       {/* FEATURES */}
-      <section className="py-24 px-6 bg-slate-900/50 border-t border-slate-800">
+      <section className="pt-16 pb-24 px-6 bg-slate-900/50">
         <div className="max-w-6xl mx-auto space-y-14">
           <div className="text-center">
             <h2 className="text-4xl sm:text-5xl font-bold text-white mb-4">
