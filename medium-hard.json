@@ -1,294 +1,982 @@
 [
   {
-    "question": "If the cost price of an item is ₹500 and it is sold at 20% profit, what is the selling price?",
-    "options": ["₹550", "₹600", "₹650", "₹700"],
+    "question": "Choose the correct indirect speech: He said, 'I have been working hard since morning.'",
+    "options": [
+      "He said that he was working hard since morning.",
+      "He said that he had been working hard since morning.",
+      "He said that he has been working hard since morning.",
+      "He said he had worked hard since morning."
+    ],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A sum of money at compound interest amounts to ₹672 in 2 years and to ₹714 in 3 years. The rate of interest per annum is:",
+    "options": ["5%", "6%", "6.25%", "7%"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'SYSTEM' is coded as 'METSYS' and 'ADOPTION' as 'NOITPODA', then 'FRACTION' will be coded as:",
+    "options": ["NOITCARF", "ITCARFNO", "NOITACRF", "CARFNOIT"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the error: Although he was (A) / late for the meeting (B) / but he managed (C) / to finish the presentation (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "A and B can together finish a work in 30 days. They worked together for 20 days and then B left. After another 20 days, A finished the remaining work. In how many days can A alone finish the work?",
+    "options": ["40", "50", "60", "70"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Statements: All poets are daydreamers. All painters are daydreamers. Conclusions: I. All painters are poets. II. Some daydreamers are not painters.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the word most nearly opposite in meaning to 'Mitigate'.",
+    "options": ["Abate", "Aggravate", "Alleviate", "Pacify"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number in the sequence: 4, 12, 36, 108, ?",
+    "options": ["144", "216", "324", "432"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A shopkeeper marked his goods 20% above the cost price and allows a discount of 10%. His profit percentage is:",
+    "options": ["8%", "10%", "12%", "15%"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct idiom meaning for 'To smell a rat'.",
+    "options": ["To see a rat", "To suspect foul dealings", "To get a bad smell", "To hunt for a rat"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Two numbers are in the ratio 3:5. If 9 is subtracted from each, the new ratio is 12:23. The smaller number is:",
+    "options": ["27", "33", "49", "55"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "If a number is increased by 25% and becomes 250, what was the original number?",
-    "options": ["180", "190", "200", "210"],
+    "question": "If 'A + B' means A is the brother of B; 'A - B' means A is the sister of B and 'A * B' means A is the father of B. Which of the following means that C is the son of M?",
+    "options": ["M * C + N", "M - C + N", "N * M - C", "M + C * N"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correct one-word substitute: 'A person who is indifferent to pleasure or pain'.",
+    "options": ["Stoic", "Epicurean", "Sadist", "Skeptic"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "How many times do the hands of a clock coincide in a day?",
+    "options": ["20", "21", "22", "24"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The average of 5 consecutive odd numbers is 61. What is the difference between the highest and lowest numbers?",
+    "options": ["4", "8", "12", "16"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Fill in the blank: The meeting was ______ because of a lack of quorum.",
+    "options": ["put off", "put out", "put away", "put in"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A train covers a distance in 50 minutes, if it runs at a speed of 48 kmph on an average. The speed at which the train must run to reduce the time of journey to 40 minutes will be:",
+    "options": ["50 kmph", "55 kmph", "60 kmph", "64 kmph"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "A train travels 180 km in 3 hours. What is its speed?",
-    "options": ["50 km/h", "55 km/h", "60 km/h", "65 km/h"],
+    "question": "In a certain code, 'FISH' is written as 'EHRG'. How is 'JUNGLE' written in that code?",
+    "options": ["ITMFKD", "ITNFKD", "KVOHMF", "TIMFKD"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Select the correct spelling.",
+    "options": ["Maniacal", "Manical", "Maneical", "Maniacle"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In what ratio must rice at ₹9.30 per kg be mixed with rice at ₹10.80 per kg so that the mixture is worth ₹10 per kg?",
+    "options": ["8:7", "7:8", "5:6", "6:5"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "A sum of money placed at compound interest doubles itself in 5 years. It will amount to eight times itself at the same rate of interest in:",
+    "options": ["10 years", "12 years", "15 years", "20 years"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "If A can complete a work in 10 days, how many days will A take to complete 50% of the work?",
-    "options": ["2", "3", "4", "5"],
+    "question": "Choose the correct preposition: He has been suffering from fever ______ last Monday.",
+    "options": ["for", "from", "since", "by"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If 'PAINT' is coded as '74128' and 'EXCEL' is coded as '93596', how would you code 'ACCEPT'?",
+    "options": ["455978", "459578", "455798", "457798"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A shopkeeper sells two watches for ₹99 each. On one he gets 10% profit and on the other he loses 10%. His total gain or loss percent is:",
+    "options": ["1% gain", "1% loss", "No profit no loss", "2% loss"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the error: Neither of the (A) / five accused (B) / could be (C) / convicted (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Statement: All windows are doors. No door is a wall. Conclusion: I. No window is a wall. II. No wall is a door.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A, B, and C can do a piece of work in 20, 30, and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?",
+    "options": ["12 days", "15 days", "16 days", "18 days"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Prudent'.",
+    "options": ["Impolite", "Cautious", "Wealthy", "Reckless"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Look at this series: 7, 10, 8, 11, 9, 12, ... What number should come next?",
+    "options": ["7", "10", "12", "13"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The speed of a boat in still water is 15 km/hr and the rate of current is 3 km/hr. The distance travelled downstream in 12 minutes is:",
+    "options": ["1.2 km", "1.8 km", "2.4 km", "3.6 km"],
     "answer": 3,
     "section": "Quant"
   },
   {
-    "question": "Find the next number: 2, 6, 12, 20, ?",
-    "options": ["28", "30", "32", "36"],
+    "question": "Choose the correct one-word substitute: 'A place where bees are kept'.",
+    "options": ["Aquarium", "Apiary", "Aviary", "Hutch"],
     "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+    "options": ["Mother", "Sister", "Daughter", "Grandmother"],
+    "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "The ratio of boys to girls in a class is 3:2. If there are 30 boys, how many girls are there?",
-    "options": ["15", "18", "20", "25"],
-    "answer": 2,
+    "question": "If the price of sugar is increased by 25%, by how much percent must a householder reduce her consumption of sugar so as not to increase the expenditure?",
+    "options": ["15%", "20%", "25%", "30%"],
+    "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "If the average of 5 numbers is 24, what is their total?",
-    "options": ["100", "110", "120", "130"],
-    "answer": 2,
-    "section": "Quant"
+    "question": "Choose the correct idiom meaning: 'To be under the weather'.",
+    "options": ["To be very happy", "To feel ill", "To be caught in a storm", "To be successful"],
+    "answer": 1,
+    "section": "English"
   },
   {
-    "question": "If 15% of a number is 75, what is the number?",
-    "options": ["400", "450", "500", "550"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Find missing number: 3, 9, 27, ?",
-    "options": ["54", "72", "81", "90"],
-    "answer": 2,
+    "question": "How many such pairs of letters are there in the word 'CORPORATE' which have as many letters between them as in the English alphabet?",
+    "options": ["None", "One", "Two", "Three"],
+    "answer": 3,
     "section": "Reasoning"
   },
   {
-    "question": "If a discount of 10% is given on ₹800, what is the final price?",
-    "options": ["₹700", "₹720", "₹750", "₹780"],
-    "answer": 1,
+    "question": "A clock is started at noon. By 10 minutes past 5, the hour hand has turned through:",
+    "options": ["145°", "150°", "155°", "160°"],
+    "answer": 2,
     "section": "Quant"
   },
-
   {
-    "question": "Choose the correct synonym of 'Obsolete'.",
-    "options": ["Modern", "Outdated", "Popular", "Active"],
+    "question": "Identify the antonym of 'Ambiguous'.",
+    "options": ["Vague", "Clear", "Uncertain", "Obscure"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "Choose the correct antonym of 'Scarce'.",
-    "options": ["Rare", "Limited", "Abundant", "Few"],
-    "answer": 2,
-    "section": "English"
+    "question": "If 'MIND' is coded as 'KGLB' and 'ARGUE' is coded as 'YPESC', what is the code for 'DIAGRAM'?",
+    "options": ["BGYEPYK", "BGYPYEK", "GLPEYKB", "BGYEPKY"],
+    "answer": 3,
+    "section": "Reasoning"
   },
   {
-    "question": "Fill in the blank: He is capable ______ solving the problem.",
-    "options": ["to", "for", "of", "with"],
-    "answer": 2,
-    "section": "English"
+    "question": "A sum of ₹12,500 amounts to ₹15,500 in 4 years at the rate of simple interest. What is the rate of interest?",
+    "options": ["3%", "4%", "5%", "6%"],
+    "answer": 3,
+    "section": "Quant"
   },
   {
-    "question": "Identify the error: She don't like coffee.",
-    "options": ["She", "don't", "like", "coffee"],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "Choose the correct passive voice: 'They completed the work.'",
+    "question": "Change the following sentence into Active Voice: 'The room was cleaned by the janitor.'",
     "options": [
-      "The work completed by them.",
-      "The work was completed by them.",
-      "The work is completed by them.",
-      "The work had completed by them."
+      "The janitor cleans the room.",
+      "The janitor has cleaned the room.",
+      "The janitor cleaned the room.",
+      "The janitor is cleaning the room."
     ],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Two pipes A and B can fill a tank in 36 hours and 45 hours respectively. If both pipes are opened together, how much time will they take to fill the tank?",
+    "options": ["15 hours", "20 hours", "25 hours", "30 hours"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct word to fill the blank: The speaker's ______ argument convinced the committee to approve the project.",
+    "options": ["Cogent", "Vague", "Flimsy", "Tenuous"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'REQUEST' is written as 'S2R52TU', then how will 'ACID' be written?",
+    "options": ["1D3E", "BDJE", "ID3E", "B3JE"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A man buys a cycle for ₹1400 and sells it at a loss of 15%. What is the selling price of the cycle?",
+    "options": ["₹1090", "₹1160", "₹1190", "₹1202"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: The news of (A) / the earthquake (B) / have spread (C) / rapidly (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Six people A, B, C, D, E, and F are sitting in a circle facing the center. B is between F and C; A is between E and D; F is to the left of D. Who is between A and F?",
+    "options": ["E", "C", "D", "B"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A student has to obtain 33% of the total marks to pass. He got 125 marks and failed by 40 marks. The maximum marks are:",
+    "options": ["300", "500", "800", "1000"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Inevitable'.",
+    "options": ["Avoidable", "Uncertain", "Unavoidable", "Distant"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the next number in the series: 1, 2, 6, 24, 120, ?",
+    "options": ["240", "480", "600", "720"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A train passes a station platform in 36 seconds and a man standing on the platform in 20 seconds. If the speed of the train is 54 km/hr, what is the length of the platform?",
+    "options": ["120 m", "240 m", "300 m", "360 m"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct antonym of 'Exodus'.",
+    "options": ["Departure", "Influx", "Exit", "Migration"],
     "answer": 1,
     "section": "English"
   },
-
   {
-    "question": "If 12 men can complete a work in 8 days, how many days will 6 men take?",
-    "options": ["12", "14", "16", "18"],
+    "question": "In a code, '3A, 2B, 7C' means 'Truth is Eternal'; '7C, 9D, 8E' means 'Enmity is Not Eternal'; and '3A, 4F, 2B' means 'Truth does not Perish'. Which code means 'Eternal'?",
+    "options": ["3A", "2B", "7C", "4F"],
     "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Find next: 1, 4, 10, 22, ?",
-    "options": ["40", "46", "52", "60"],
-    "answer": 1,
     "section": "Reasoning"
   },
   {
-    "question": "If the simple interest on ₹2000 for 2 years at 5% per annum is?",
-    "options": ["₹100", "₹150", "₹200", "₹250"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "If a car increases its speed from 60 km/h to 75 km/h, what is percentage increase?",
-    "options": ["20%", "25%", "30%", "15%"],
+    "question": "The ages of two persons A and B are in the ratio 5:7. Eight years ago, their ages were in the ratio 7:13. Their present ages are:",
+    "options": ["15, 21", "20, 28", "25, 35", "30, 42"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Which number replaces the question mark? 5, 11, 23, 47, ?",
-    "options": ["90", "92", "95", "99"],
-    "answer": 2,
+    "question": "Change into Indirect Speech: She said to him, 'Why don't you go today?'",
+    "options": [
+      "She asked him why he did not go that day.",
+      "She asked him why he does not go today.",
+      "She asked him why he hadn't gone that day.",
+      "She asked him why didn't he go that day."
+    ],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Which of the following is the odd one out?",
+    "options": ["35", "49", "63", "55"],
+    "answer": 3,
     "section": "Reasoning"
   },
-
   {
-    "question": "If the perimeter of a square is 40 cm, what is its area?",
-    "options": ["80", "90", "100", "110"],
-    "answer": 2,
+    "question": "A cistern is normally filled in 8 hours but takes 2 hours longer to fill because of a leak in its bottom. If the cistern is full, the leak will empty it in:",
+    "options": ["20 hours", "40 hours", "50 hours", "60 hours"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'A person who writes the life history of another person'.",
+    "options": ["Autobiographer", "Biographer", "Historian", "Novelist"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number: 8, 24, 12, 36, 18, 54, ?",
+    "options": ["27", "108", "68", "72"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If 15 men can reap a field in 20 days, in how many days will 10 men reap the same field?",
+    "options": ["25 days", "30 days", "40 days", "50 days"],
+    "answer": 1,
     "section": "Quant"
   },
   {
     "question": "Choose the correctly spelled word.",
-    "options": ["Accomodation", "Accommodation", "Acommodation", "Accomadation"],
-    "answer": 1,
+    "options": ["Bureaucracy", "Burocracy", "Bureaucracey", "Bureacracy"],
+    "answer": 0,
     "section": "English"
   },
   {
-    "question": "If a train covers 300 km in 5 hours, how far will it travel in 8 hours?",
-    "options": ["420 km", "450 km", "480 km", "500 km"],
+    "question": "A sum of ₹1,550 was lent partly at 5% and partly at 8% p.a. simple interest. The total interest received after 3 years was ₹300. The ratio of the money lent at 5% to that at 8% is:",
+    "options": ["5:8", "8:5", "16:15", "31:6"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "Find missing number: 7, 14, 28, 56, ?",
-    "options": ["84", "98", "112", "120"],
-    "answer": 2,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If the selling price is ₹960 and loss is 20%, what is cost price?",
-    "options": ["₹1000", "₹1100", "₹1200", "₹800"],
-    "answer": 2,
-    "section": "Quant"
-  },
-
-  {
-    "question": "Which word is closest in meaning to 'Meticulous'?",
-    "options": ["Careless", "Precise", "Lazy", "Quick"],
-    "answer": 1,
+    "question": "Choose the correct word to fill the blank: The manager refused to ______ the employee's request for an immediate promotion.",
+    "options": ["Accede to", "Exceed in", "Accept for", "Acquire at"],
+    "answer": 0,
     "section": "English"
   },
   {
-    "question": "If the average of 8 numbers is 18 and 7 numbers average is 16, what is the 8th number?",
-    "options": ["30", "32", "34", "36"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Find next: 2, 3, 5, 9, 17, ?",
-    "options": ["33", "30", "31", "29"],
+    "question": "Statement: Some apples are mangoes. No mango is a banana. Conclusion: I. Some apples are not bananas. II. Some bananas are apples.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
     "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "If 3x = 27, what is x?",
-    "options": ["7", "8", "9", "10"],
+    "question": "A dealer marks his goods 30% above the cost price and then allows a 15% discount. What is his actual profit percentage?",
+    "options": ["10.5%", "11.5%", "15%", "12.5%"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: One of the most (A) / widespread bad habit (B) / is the use (C) / of tobacco (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'FRIDGE' is coded as 'GTLHLK', then how will 'KETTLE' be coded?",
+    "options": ["LGWWQK", "LGWWRK", "LGWXQK", "LHWWRK"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The population of a town increases by 5% annually. If its present population is 9261, what was it 3 years ago?",
+    "options": ["7500", "8000", "8500", "9000"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate synonym for 'Voracious'.",
+    "options": ["Quick", "Greedy", "Angry", "Tired"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number in the series: 3, 7, 15, 31, 63, ?",
+    "options": ["92", "115", "127", "131"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A man can row 6 km/h in still water. If the speed of the current is 2 km/h, it takes him 3 hours to row to a place and back. How far is the place?",
+    "options": ["4 km", "6 km", "8 km", "10 km"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "Choose correct indirect speech: He said, 'I am busy.'",
+    "question": "Select the correct antonym of 'Benevolent'.",
+    "options": ["Kind", "Malevolent", "Generous", "Friendly"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "In a certain code, '247' means 'spread red carpet'; '256' means 'dust one carpet' and '234' means 'one red carpet'. What digit in that code means 'dust'?",
+    "options": ["2", "3", "5", "6"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio of the area of a square to that of the square drawn on its diagonal is:",
+    "options": ["1:1", "1:2", "1:3", "1:4"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the part of the sentence with an error: Having worked (A) / for the company for years (B) / the boss finally (C) / gave him a raise (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If 'A' is the brother of 'B', 'B' is the daughter of 'C', and 'D' is the father of 'C', then how is 'A' related to 'D'?",
+    "options": ["Grandfather", "Son", "Grandson", "Brother"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A jar contains a mixture of two liquids A and B in the ratio 4:1. When 10 litres of the mixture is replaced with 10 litres of liquid B, the ratio becomes 2:3. The quantity of A originally in the jar was:",
+    "options": ["12 litres", "15 litres", "16 litres", "20 litres"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct idiom: He is a 'dark horse'.",
+    "options": ["A fast runner", "An unexpected winner", "A wicked person", "A black colored horse"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 27, 64, 125, 144, 216.",
+    "options": ["27", "64", "144", "216"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The HCF of two numbers is 11 and their LCM is 693. If one of the numbers is 77, find the other.",
+    "options": ["66", "99", "88", "110"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of these is the correct spelling?",
+    "options": ["Acknowledge", "Acknoledge", "Aknoledge", "Acknowlege"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A box contains 4 red, 5 blue and 6 green balls. If 2 balls are drawn at random, what is the probability that both are blue?",
+    "options": ["2/21", "1/21", "5/21", "4/21"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct word to fill the blank: The new legislation was designed to ______ the effects of the economic crisis.",
+    "options": ["Ameliorate", "Aggravate", "Deteriorate", "Perpetuate"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'LEMON' is coded as 'PWKAS', then 'GRAPE' will be coded as:",
+    "options": ["KVETI", "KVERI", "LVETI", "KVEUI"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A man’s speed with the current is 15 km/hr and the speed of the current is 2.5 km/hr. The man’s speed against the current is:",
+    "options": ["8.5 km/hr", "9 km/hr", "10 km/hr", "12.5 km/hr"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: Despite of (A) / his best efforts (B) / he could not (C) / pass the exam (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Statement: All mangoes are golden. No golden thing is cheap. Conclusion: I. All mangoes are cheap. II. Golden things are not mangoes.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The cost price of 20 articles is the same as the selling price of x articles. If the profit is 25%, then the value of x is:",
+    "options": ["15", "16", "18", "25"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Frugal'.",
+    "options": ["Extravagant", "Miserly", "Thrifty", "Generous"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number: 1, 4, 27, 16, 125, 36, ?",
+    "options": ["49", "64", "216", "343"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is:",
+    "options": ["1/4", "1/10", "7/15", "8/15"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate antonym for 'Clandestine'.",
+    "options": ["Overt", "Hidden", "Secret", "Sneaky"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If '2' is coded as 'P', '3' as 'N', '9' as 'Q', '5' as 'R', '4' as 'A', and '6' as 'B', how is '594326' coded?",
+    "options": ["RQANPB", "RQANBP", "QRANPB", "RANQPB"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio between the length and the perimeter of a rectangular plot is 1:3. What is the ratio between the length and breadth of the plot?",
+    "options": ["1:2", "2:1", "3:2", "2:3"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the part of the sentence with an error: He is (A) / the most (B) / intelligentest boy (C) / in the class (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "A is the son of B. C, B’s sister, has a son D and a daughter E. F is the maternal uncle of D. How is A related to D?",
+    "options": ["Cousin", "Nephew", "Uncle", "Brother"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "At what time between 4 and 5 o'clock will the hands of a watch be at right angle?",
+    "options": ["38 2/11 min past 4", "43 7/11 min past 4", "38 5/11 min past 4", "5 5/11 min past 4"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct idiom: 'A bolt from the blue'.",
+    "options": ["A sudden luck", "An unexpected event", "A rainy day", "A blue sky"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 6, 9, 15, 21, 24, 28, 30.",
+    "options": ["21", "24", "28", "30"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Two numbers are in the ratio 1:2. If 7 is added to both, their ratio changes to 3:5. The greatest number is:",
+    "options": ["24", "26", "28", "32"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of these is the correct spelling?",
+    "options": ["Questionaire", "Questionnaire", "Questionare", "Quetionnaire"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A train 240 m long passes a pole in 24 seconds. How long will it take to pass a platform 650 m long?",
+    "options": ["65 sec", "89 sec", "100 sec", "150 sec"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct word to fill the blank: The judge ______ the prisoner to life imprisonment.",
+    "options": ["Sentenced", "Ordered", "Executed", "Charged"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'ORANGE' is coded as '521634' and 'GRAPE' is coded as '32174', how is 'APPLE' coded?",
+    "options": ["17744", "17734", "17743", "16644"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Find the compound interest on ₹10,000 for 2 years at 10% per annum, compounded annually.",
+    "options": ["₹2,000", "₹2,100", "₹1,100", "₹2,500"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: The group of (A) / protesters (B) / were shouting (C) / slogans (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If 'P' denotes '+', 'Q' denotes '-', 'R' denotes '*' and 'S' denotes '/', then what is the value of 18 R 12 P 4 S 2 Q 10?",
+    "options": ["208", "210", "226", "232"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A can do a piece of work in 80 days. He works at it for 10 days and then B alone finishes the remaining work in 42 days. In how much time will A and B working together finish the work?",
+    "options": ["24 days", "25 days", "30 days", "35 days"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Superficial'.",
+    "options": ["Deep", "Shallow", "Serious", "Detailed"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number in the sequence: 4, 9, 20, 43, 90, ?",
+    "options": ["180", "185", "190", "187"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A shopkeeper bought 80 kg of sugar at ₹13.50 per kg and mixed it with 120 kg sugar at ₹16 per kg. At what rate should he sell the mixture to gain 16%?",
+    "options": ["₹17.40", "₹18.20", "₹16.50", "₹15.00"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate antonym for 'Obsolete'.",
+    "options": ["Antique", "Modern", "Outdated", "Rigid"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "In a certain code, 'PLANT' is coded as 'QMZOU'. How is 'FRUIT' coded?",
+    "options": ["GSVJU", "GTVJU", "GSUJU", "HSUJU"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio of the speed of a car, a train and a bus is 5:9:4. The average speed of the car, the bus and the train is 72 km/hr. What is the average speed of the car and the train together?",
+    "options": ["82 km/hr", "84 km/hr", "78 km/hr", "60 km/hr"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the part of the sentence with an error: No sooner did (A) / the bell ring (B) / then the students (C) / ran out (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "A man is facing North-West. He turns 90° in the clockwise direction and then 135° in the anti-clockwise direction. Which direction is he facing now?",
+    "options": ["East", "West", "North", "South"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the length of a rectangle is increased by 10% and the breadth is decreased by 10%, the change in area is:",
+    "options": ["1% increase", "1% decrease", "No change", "2% decrease"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct idiom: 'To cry wolf'.",
+    "options": ["To listen eagerly", "To give false alarm", "To be ruthless", "To keep off starvation"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 121, 143, 165, 186, 209.",
+    "options": ["143", "165", "186", "209"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Three numbers are in the ratio 4:5:6 and their average is 25. The largest number is:",
+    "options": ["30", "35", "40", "45"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of these is the correct spelling?",
+    "options": ["Parallel", "Paralel", "Parrallel", "Parralel"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A sum of money amounts to ₹9800 after 5 years and ₹12005 after 8 years at the same rate of simple interest. The rate of interest per annum is:",
+    "options": ["5%", "8%", "12%", "15%"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct word to fill the blank: The team's failure was ______ to a lack of communication and coordination.",
+    "options": ["Attributed", "Contributed", "Distributed", "Retributed"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'CENTRIFUGE' is coded as 'DIRUQHGVJH', then how will 'GOSSIP' be coded?",
+    "options": ["HPTTJQ", "HPTTIQ", "HPTVJQ", "HPTVJQ"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A vendor bought toffees at 6 for a rupee. How many for a rupee must he sell to gain 20%?",
+    "options": ["3", "4", "5", "6"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: Despite of (A) / the heavy rain (B) / the match (C) / continued (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Statement 1: All mangoes are golden. Statement 2: No golden thing is cheap. Conclusion: I. All mangoes are cheap. II. Golden things are not mangoes.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The speed of a boat in still water is 15 km/hr and the rate of current is 3 km/hr. The distance travelled downstream in 12 minutes is:",
+    "options": ["1.8 km", "2.4 km", "3.6 km", "4.2 km"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Candid'.",
+    "options": ["Frank", "Devious", "Ambiguous", "Evasive"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In a certain code, '253' means 'books are old', '546' means 'man is old' and '378' means 'buy good books'. What stands for 'are' in that code?",
+    "options": ["2", "5", "4", "6"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Two pipes A and B can fill a tank in 20 and 30 minutes respectively. If both pipes are opened together, the time taken to fill the tank is:",
+    "options": ["10 mins", "12 mins", "15 mins", "25 mins"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate antonym for 'Exodus'.",
+    "options": ["Departure", "Influx", "Migration", "Evacuation"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number in the series: 2, 6, 12, 20, 30, 42, ?",
+    "options": ["50", "52", "54", "56"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is:",
+    "options": ["1/4", "1/10", "7/15", "8/15"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the correctly spelled word.",
+    "options": ["Maneuver", "Manouever", "Manoeuvre", "Manuever"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+    "options": ["Mother", "Sister", "Grandmother", "Daughter"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A shopkeeper marks his goods 30% above the cost price and gives a discount of 10%. His gain percent is:",
+    "options": ["15%", "17%", "20%", "22%"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct idiom meaning: 'To be at loggerheads'.",
+    "options": ["To cooperate", "To be in strong disagreement", "To work together", "To be confused"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Which of the following is the odd one out?",
+    "options": ["Mercury", "Venus", "Moon", "Mars"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A train 140 m long is running at 60 km/hr. In how much time will it pass a platform 260 m long?",
+    "options": ["18 sec", "24 sec", "30 sec", "36 sec"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct preposition: He is very good ______ playing chess.",
+    "options": ["at", "in", "with", "on"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If a certain sum of money amounts to ₹2,800 in 2 years and ₹3,250 in 5 years at simple interest, what is the rate of interest?",
+    "options": ["5%", "6%", "8%", "10%"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the correctly spelled word.",
+    "options": ["Millennium", "Millenium", "Milenium", "Milennium"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Statement: Some doctors are fools. Some fools are rich. Conclusion: I. Some doctors are rich. II. Some rich people are doctors.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A person travels at 10 km/hr and reaches his destination 15 minutes late. If he travels at 12 km/hr, he reaches 5 minutes late. What is the distance?",
+    "options": ["10 km", "12 km", "15 km", "20 km"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct antonym of 'Complacent'.",
+    "options": ["Satisfied", "Anxious", "Confident", "Smug"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Look at this series: 36, 34, 30, 28, 24, ... What number should come next?",
+    "options": ["20", "22", "23", "26"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The perimeter of a rectangular field is 480 meters and the ratio between the length and the breadth is 5:3. The area is:",
+    "options": ["13,500 sq m", "15,500 sq m", "12,500 sq m", "14,500 sq m"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct meaning of the idiom: 'To grease the palm'.",
+    "options": ["To rub oil on hands", "To bribe someone", "To work hard", "To cheat someone"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'HEART' is coded as 'SQDVM', how is 'EARTH' coded?",
+    "options": ["QDVM S", "QDVSM", "QDVMS", "SQDVM"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A mixture contains milk and water in the ratio 5:1. On adding 5 liters of water, the ratio of milk and water becomes 5:2. The quantity of milk in the mixture is:",
+    "options": ["15 liters", "20 liters", "25 liters", "30 liters"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Fill in the blank: The boss wanted to know ______ the employee had finished the report.",
+    "options": ["whether", "weather", "wether", "whither"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A woman said, 'This girl is the wife of the grandson of my mother.' How is the woman related to the girl?",
+    "options": ["Mother", "Mother-in-law", "Sister", "Grandmother"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "In how many years will a sum of ₹800 at 10% per annum compounded semi-annually become ₹926.10?",
+    "options": ["1.5 years", "2 years", "2.5 years", "3 years"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly synonymous with 'Tenacious'.",
+    "options": ["Persistent", "Weak", "Timid", "Unstable"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 10, 25, 45, 54, 60, 75, 80.",
+    "options": ["10", "45", "54", "75"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.",
+    "options": ["2 hours", "3 hours", "4 hours", "5 hours"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Change the following sentence into Passive Voice: 'The mechanic fixed the car.'",
     "options": [
-      "He said that he is busy.",
-      "He said that he was busy.",
-      "He said he busy.",
-      "He says that he was busy."
+      "The car is fixed by the mechanic.",
+      "The car was fixed by the mechanic.",
+      "The car has been fixed by the mechanic.",
+      "The car fixed the mechanic."
     ],
     "answer": 1,
     "section": "English"
   },
-
   {
-    "question": "Find the compound interest on ₹1000 at 10% for 2 years.",
-    "options": ["₹200", "₹210", "₹220", "₹230"],
+    "question": "Which of the following is the same as Count, List, Weight?",
+    "options": ["Compare", "Sequence", "Number", "Measure"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A cistern has two taps which fill it in 12 minutes and 15 minutes respectively. There is also a waste pipe in the cistern. When all the three are opened, the empty cistern is full in 20 minutes. How long will the waste pipe take to empty the full cistern?",
+    "options": ["8 min", "10 min", "12 min", "15 min"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Which comes next: A, C, F, J, ?",
-    "options": ["O", "P", "Q", "R"],
+    "question": "Choose the correctly spelled word.",
+    "options": ["Questionnaire", "Questionaire", "Quetionnaire", "Questionere"],
     "answer": 0,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If the ratio of ages of A and B is 4:5 and A is 20, what is B's age?",
-    "options": ["22", "24", "25", "26"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct sentence.",
-    "options": [
-      "Neither of them are ready.",
-      "Neither of them is ready.",
-      "Neither them is ready.",
-      "Neither them are ready."
-    ],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "If 8% of a number is 64, find the number.",
-    "options": ["700", "750", "800", "850"],
-    "answer": 2,
-    "section": "Quant"
-  },
-
-  {
-    "question": "Find next: 1, 1, 2, 3, 5, 8, ?",
-    "options": ["11", "12", "13", "14"],
-    "answer": 2,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If a shopkeeper marks 20% above cost price and gives 10% discount, what is overall profit?",
-    "options": ["6%", "7%", "8%", "9%"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct preposition: She is fond ______ music.",
-    "options": ["of", "for", "with", "at"],
-    "answer": 0,
-    "section": "English"
-  },
-  {
-    "question": "If 5 workers complete a task in 12 days, how many days will 10 workers take?",
-    "options": ["5", "6", "7", "8"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Find missing: 10, 20, 40, 80, ?",
-    "options": ["120", "140", "160", "180"],
-    "answer": 2,
-    "section": "Reasoning"
-  },
-
-  {
-    "question": "If the sum of two numbers is 50 and their difference is 10, find the larger number.",
-    "options": ["25", "30", "35", "40"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct antonym of 'Expand'.",
-    "options": ["Grow", "Increase", "Shrink", "Spread"],
-    "answer": 2,
-    "section": "English"
-  },
-  {
-    "question": "If a man walks at 5 km/h for 3 hours, distance covered?",
-    "options": ["10 km", "12 km", "15 km", "18 km"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Find next: 4, 9, 16, 25, ?",
-    "options": ["30", "36", "40", "49"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-  {
-    "question": "Choose correct article: He is ______ honest man.",
-    "options": ["a", "an", "the", "no article"],
-    "answer": 1,
     "section": "English"
   }
 ]
