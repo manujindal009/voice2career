@@ -1,310 +1,870 @@
 [
   {
-    "question": "Choose the correct synonym of 'Rapid'.",
-    "options": ["Slow", "Fast", "Late", "Heavy"],
+    "question": "Choose the correct synonym of 'Augment'.",
+    "options": ["Decrease", "Increase", "Suffer", "Ignore"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "Choose the correct antonym of 'Ancient'.",
-    "options": ["Old", "Modern", "Historic", "Traditional"],
+    "question": "Fill in the blank: Neither of the two candidates ______ suitable for the job.",
+    "options": ["are", "is", "were", "been"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "Fill in the blank: She insisted ______ paying the bill.",
-    "options": ["on", "at", "for", "to"],
+    "question": "Identify the correctly spelled word.",
+    "options": ["Committee", "Comittee", "Commitee", "Comitee"],
     "answer": 0,
     "section": "English"
   },
   {
-    "question": "Choose the correct spelling.",
-    "options": ["Recieve", "Receive", "Receeve", "Receve"],
+    "question": "Choose the antonym of 'Enormous'.",
+    "options": ["Huge", "Tiny", "Soft", "Average"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "Identify the correctly formed sentence.",
-    "options": [
-      "He go to school daily.",
-      "He goes to school daily.",
-      "He going to school daily.",
-      "He gone to school daily."
-    ],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "What is 25% of 240?",
+    "question": "What is 15% of 400?",
     "options": ["50", "60", "70", "80"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "What is 15% of 200?",
-    "options": ["25", "30", "35", "40"],
+    "question": "Find the average of the first five prime numbers.",
+    "options": ["5.0", "5.6", "6.2", "4.8"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "If 5 pencils cost ₹25, what is cost of 1 pencil?",
-    "options": ["₹3", "₹4", "₹5", "₹6"],
+    "question": "If a man buys an item for ₹500 and sells it for ₹600, what is the profit percentage?",
+    "options": ["10%", "15%", "20%", "25%"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "What is 20% of 500?",
-    "options": ["50", "75", "100", "120"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "What is 12 × 8?",
-    "options": ["84", "96", "108", "88"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "In a class of 60 students, 35 are boys. How many are girls?",
-    "options": ["20", "25", "30", "15"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Average of 2, 4, 6, 8?",
-    "options": ["4", "5", "6", "7"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Find next number: 2, 4, 6, 8, ?",
-    "options": ["9", "10", "11", "12"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-  {
-    "question": "Find next number: 5, 10, 15, 20, ?",
-    "options": ["22", "24", "25", "30"],
+    "question": "Complete the series: 4, 9, 16, 25, ?",
+    "options": ["30", "35", "36", "49"],
     "answer": 2,
     "section": "Reasoning"
   },
   {
-    "question": "Which is the largest?",
-    "options": ["0.25", "0.52", "0.205", "0.125"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Find missing: 3, 6, 9, ?",
-    "options": ["10", "11", "12", "15"],
+    "question": "If 'RED' is coded as '6720', then 'GREEN' would be coded as:",
+    "options": ["1677199", "16717209", "9207714", "1671720"],
     "answer": 2,
     "section": "Reasoning"
   },
   {
-    "question": "Simplify: 100 ÷ 5",
-    "options": ["10", "15", "20", "25"],
+    "question": "Pointing to a man, a woman said, 'His mother is the only daughter of my mother.' How is the woman related to the man?",
+    "options": ["Sister", "Grandmother", "Mother", "Aunt"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Solve: 120 / (12 + 8) * 5",
+    "options": ["2", "30", "50", "25"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of these is a leap year?",
+    "options": ["1900", "2000", "2002", "2010"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correct preposition: He is tired ______ walking.",
+    "options": ["with", "by", "of", "from"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the simple interest on ₹2000 at 5% per annum for 3 years.",
+    "options": ["₹300", "₹400", "₹500", "₹600"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the odd one out: Square, Rectangle, Triangle, Cube.",
+    "options": ["Square", "Rectangle", "Triangle", "Cube"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio 5:4 expressed as a percent equals:",
+    "options": ["125%", "80%", "40%", "12.5%"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "What is the square root of 625?",
+    "options": ["15", "25", "35", "45"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Fill in the blank: If I ______ rich, I would travel the world.",
+    "options": ["am", "was", "were", "been"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Next number in series: 10, 20, 40, 80, ?",
+    "options": ["100", "120", "140", "160"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A person crosses a 600m long street in 5 minutes. What is his speed in km/hr?",
+    "options": ["3.6", "7.2", "8.4", "10"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of the following is a synonym for 'Abundant'?",
+    "options": ["Scarce", "Plentiful", "Rare", "Limited"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 12 apples cost ₹180, what is the cost of 7 apples?",
+    "options": ["₹95", "₹105", "₹115", "₹125"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct antonym for 'Optimistic'.",
+    "options": ["Hopeful", "Pessimistic", "Cheerful", "Positive"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number: 121, 144, 169, 196, ?",
+    "options": ["210", "225", "256", "244"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "What is the HCF of 12 and 18?",
+    "options": ["3", "6", "9", "12"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Complete the analogy: Book : Author :: Statue : ?",
+    "options": ["Painter", "Sculptor", "Musician", "Writer"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Fill in the blank: The train ______ before we reached the station.",
+    "options": ["left", "has left", "had left", "was leaving"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "A sum of ₹5000 is invested at a simple interest of 10% per annum. What will be the interest after 2 years?",
+    "options": ["₹500", "₹800", "₹1000", "₹1200"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "Which direction is opposite to North?",
-    "options": ["South", "East", "West", "North-East"],
+    "question": "If 'WATER' is written as 'XBUFS', how is 'SCHOOL' written?",
+    "options": ["TDIPPM", "TDPPIM", "TDIPOM", "TDIOOM"],
     "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "Which is odd one out?",
-    "options": ["Cat", "Dog", "Lion", "Car"],
+    "question": "Which word is an adjective in the sentence: 'The blue umbrella was lost'?",
+    "options": ["The", "Blue", "Umbrella", "Lost"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "What is the value of 0.05 × 0.2?",
+    "options": ["0.1", "0.01", "0.001", "1.0"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the odd one out.",
+    "options": ["January", "March", "July", "September"],
     "answer": 3,
     "section": "Reasoning"
   },
   {
-    "question": "How many days in a leap year?",
-    "options": ["365", "366", "364", "360"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-
-  {
-    "question": "Find 10% of 350.",
-    "options": ["30", "35", "40", "45"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "What is square of 12?",
-    "options": ["124", "144", "132", "154"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "What is cube of 3?",
-    "options": ["6", "9", "27", "18"],
+    "question": "Choose the correctly spelled word.",
+    "options": ["Garante", "Garanty", "Guarantee", "Guaranty"],
     "answer": 2,
-    "section": "Quant"
+    "section": "English"
   },
   {
-    "question": "Find next: 1, 4, 9, 16, ?",
-    "options": ["20", "25", "30", "36"],
-    "answer": 1,
+    "question": "A man walks 5km South and then 3km North. How far is he from the starting point?",
+    "options": ["2km", "3km", "5km", "8km"],
+    "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "If today is Monday, what day after 3 days?",
-    "options": ["Wednesday", "Thursday", "Friday", "Sunday"],
+    "question": "The plural of 'Criterion' is:",
+    "options": ["Criterions", "Criteria", "Criterias", "Criterion"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If a rectangle has a length of 10cm and width of 5cm, what is its perimeter?",
+    "options": ["15cm", "30cm", "50cm", "25cm"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "In a certain code, 'APPLE' is '50'. What is the value of 'BOY'?",
+    "options": ["40", "42", "38", "45"],
     "answer": 1,
     "section": "Reasoning"
   },
   {
-    "question": "Choose correct synonym of 'Happy'.",
-    "options": ["Sad", "Joyful", "Angry", "Tired"],
-    "answer": 1,
+    "question": "Identify the conjunction in: 'I wanted to go, but I was too tired.'",
+    "options": ["Wanted", "Go", "But", "Too"],
+    "answer": 2,
     "section": "English"
   },
   {
-    "question": "Choose correct antonym of 'Brave'.",
-    "options": ["Strong", "Coward", "Heroic", "Bold"],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "Fill blank: She is good ______ math.",
-    "options": ["in", "at", "on", "for"],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "Which is correct plural?",
-    "options": ["Childs", "Children", "Childrens", "Child"],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "Choose correct word: He has ______ his work.",
-    "options": ["finish", "finished", "finishing", "finishes"],
-    "answer": 1,
-    "section": "English"
-  },
-
-  {
-    "question": "What is 7 × 9?",
-    "options": ["56", "63", "72", "69"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "What is 100 - 45?",
-    "options": ["45", "50", "55", "60"],
+    "question": "Convert 3/4 into a percentage.",
+    "options": ["30%", "45%", "75%", "80%"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "Find average of 10 and 20.",
-    "options": ["12", "15", "20", "25"],
-    "answer": 1,
+    "question": "If today is Tuesday, what day was it 4 days ago?",
+    "options": ["Friday", "Saturday", "Sunday", "Monday"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Which of these is a prime number?",
+    "options": ["21", "27", "31", "33"],
+    "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "What is half of 90?",
-    "options": ["40", "45", "50", "55"],
+    "question": "Fill in the blank: She ______ her homework every evening.",
+    "options": ["do", "does", "doing", "done"],
     "answer": 1,
-    "section": "Quant"
+    "section": "English"
   },
   {
-    "question": "Find next: 100, 90, 80, ?",
-    "options": ["75", "70", "60", "85"],
+    "question": "Which number comes next: 2, 6, 12, 20, 30, ?",
+    "options": ["40", "42", "44", "46"],
     "answer": 1,
     "section": "Reasoning"
   },
   {
-    "question": "Which number is even?",
-    "options": ["15", "21", "28", "33"],
-    "answer": 2,
+    "question": "Solve: (15 + 5) × (10 - 2) / 4",
+    "options": ["20", "40", "10", "80"],
+    "answer": 1,
     "section": "Quant"
-  },
+  }, 
   {
-    "question": "What is 5²?",
-    "options": ["10", "20", "25", "15"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Which is smallest?",
-    "options": ["0.8", "0.08", "0.18", "0.28"],
+    "question": "What is the square of 15?",
+    "options": ["215", "225", "235", "245"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Find missing: 2, 6, 18, ?",
-    "options": ["36", "48", "54", "60"],
+    "question": "Choose the correct synonym for 'Fragile'.",
+    "options": ["Strong", "Tough", "Delicate", "Flexible"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the next term in the series: 5, 11, 17, 23, ?",
+    "options": ["27", "28", "29", "30"],
     "answer": 2,
     "section": "Reasoning"
   },
   {
-    "question": "Which day comes before Sunday?",
-    "options": ["Friday", "Saturday", "Monday", "Thursday"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-
-  {
-    "question": "Choose correct synonym of 'Big'.",
-    "options": ["Tiny", "Huge", "Small", "Short"],
-    "answer": 1,
-    "section": "English"
+    "question": "What is 20% of 25% of 400?",
+    "options": ["20", "40", "80", "100"],
+    "answer": 0,
+    "section": "Quant"
   },
   {
-    "question": "Choose correct antonym of 'Hot'.",
-    "options": ["Warm", "Cold", "Boiling", "Heat"],
-    "answer": 1,
-    "section": "English"
-  },
-  {
-    "question": "Fill blank: He is afraid ______ dogs.",
-    "options": ["with", "at", "of", "from"],
+    "question": "Fill in the blank: She is ______ most talented girl in the class.",
+    "options": ["a", "an", "the", "no article"],
     "answer": 2,
     "section": "English"
   },
   {
-    "question": "Choose correct tense: She ______ to school yesterday.",
-    "options": ["go", "goes", "went", "going"],
-    "answer": 2,
-    "section": "English"
-  },
-  {
-    "question": "Find next: 1, 3, 6, 10, ?",
-    "options": ["12", "14", "15", "18"],
-    "answer": 2,
+    "question": "If 'FRUIT' is coded as 'GSRJT', how is 'APPLE' coded?",
+    "options": ["BQQMF", "BQOKD", "BPOKD", "BQQMD"],
+    "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "If a car travels 60 km in 1 hour, speed is?",
-    "options": ["50 km/h", "60 km/h", "70 km/h", "80 km/h"],
+    "question": "A person buys a book for ₹200 and sells it for ₹250. What is the profit percentage?",
+    "options": ["20%", "25%", "30%", "50%"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "What is 30% of 300?",
-    "options": ["60", "70", "80", "90"],
+    "question": "Identify the antonym of 'Victory'.",
+    "options": ["Success", "Triumph", "Defeat", "Gain"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 49, 64, 81, 100, 120.",
+    "options": ["49", "81", "100", "120"],
     "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of money doubles itself in 10 years at simple interest. What is the rate of interest?",
+    "options": ["5%", "10%", "12%", "15%"],
+    "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Which shape has 4 equal sides?",
-    "options": ["Triangle", "Circle", "Square", "Pentagon"],
+    "question": "If 1st January of a year (not a leap year) was Monday, then what day was 31st December of the same year?",
+    "options": ["Monday", "Tuesday", "Sunday", "Wednesday"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Convert 0.75 into a fraction.",
+    "options": ["1/2", "2/3", "3/4", "4/5"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Fill in the blank: The sun ______ in the east.",
+    "options": ["rise", "rose", "rises", "rising"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Complete the analogy: Eye : See :: Ear : ?",
+    "options": ["Hear", "Smell", "Taste", "Touch"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Find the average of the first five natural numbers.",
+    "options": ["2", "2.5", "3", "3.5"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the synonym of 'Candid'.",
+    "options": ["Secretive", "Dishonest", "Frank", "Polite"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If P is the brother of Q, and R is the mother of Q, how is R related to P?",
+    "options": ["Sister", "Mother", "Aunt", "Daughter"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "What is the LCM of 15 and 20?",
+    "options": ["30", "45", "60", "90"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Which of these is a collective noun?",
+    "options": ["Happiness", "Team", "London", "Running"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Next number in series: 1, 8, 27, 64, ?",
+    "options": ["81", "100", "121", "125"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "How many seconds are there in 2 hours?",
+    "options": ["3600", "7200", "120", "240"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the correctly formed sentence.",
+    "options": [
+      "She do not likes tea.",
+      "She does not like tea.",
+      "She does not likes tea.",
+      "She do not like tea."
+    ],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If North becomes North-East, what does East become?",
+    "options": ["South", "South-East", "North", "West"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Simplify: 50 + 50 * 0 + 1",
+    "options": ["0", "1", "51", "101"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct preposition: The cat is hiding ______ the table.",
+    "options": ["under", "between", "at", "in"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "What is the cube root of 216?",
+    "options": ["4", "5", "6", "8"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the missing number in the sequence: 2, 4, 8, 16, 32, ?",
+    "options": ["48", "64", "56", "72"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the synonym of 'Diligent'.",
+    "options": ["Lazy", "Hardworking", "Careless", "Slow"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 20% of a number is 80, what is the number?",
+    "options": ["200", "300", "400", "500"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Complete the analogy: Bird : Fly :: Fish : ?",
+    "options": ["Walk", "Run", "Swim", "Jump"],
     "answer": 2,
     "section": "Reasoning"
   },
   {
-    "question": "Which is prime?",
-    "options": ["9", "15", "17", "21"],
+    "question": "Fill in the blank: Neither John nor his friends ______ going to the party.",
+    "options": ["is", "are", "was", "has"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the simple interest on ₹1000 at 10% per annum for 2 years.",
+    "options": ["₹100", "₹150", "₹200", "₹250"],
     "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "What is 1000 ÷ 10?",
-    "options": ["10", "50", "100", "150"],
+    "question": "Which of these words is spelled correctly?",
+    "options": ["Maintenance", "Maintanance", "Maintenence", "Maintainance"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'DOG' is coded as '26', what is 'CAT' coded as?",
+    "options": ["20", "24", "22", "25"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "What is the area of a square with a side of 12 cm?",
+    "options": ["48 sq cm", "144 sq cm", "120 sq cm", "24 sq cm"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the antonym of 'Artificial'.",
+    "options": ["Natural", "Fake", "Man-made", "Solid"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If Monday is the first day of the month, what day is the 15th?",
+    "options": ["Sunday", "Monday", "Tuesday", "Wednesday"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "What is 0.5 multiplied by 0.5?",
+    "options": ["2.5", "0.25", "0.025", "5.0"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the odd one out: Apple, Mango, Potato, Banana.",
+    "options": ["Apple", "Mango", "Potato", "Banana"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correct past tense: He ______ to the gym yesterday.",
+    "options": ["go", "goes", "went", "gone"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If a dozen eggs cost ₹72, how much do 5 eggs cost?",
+    "options": ["₹30", "₹35", "₹40", "₹45"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the next number: 100, 95, 85, 70, ?",
+    "options": ["60", "55", "50", "45"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the noun in the sentence: 'Honesty is the best policy.'",
+    "options": ["Honesty", "Best", "The", "Is"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "What is the average of 15, 25, and 35?",
+    "options": ["20", "25", "30", "35"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'COLD' is 'DPME', what is 'HEAT'?",
+    "options": ["IFBU", "IGBU", "IEBU", "IFAU"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Fill in the blank: She ______ been waiting for two hours.",
+    "options": ["has", "have", "is", "was"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "What is 10% of 10% of 1000?",
+    "options": ["1", "10", "100", "110"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the next term: A, C, E, G, ?",
+    "options": ["H", "I", "J", "K"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the correctly formed plural.",
+    "options": ["Tooth", "Teeth", "Tooths", "Teeths"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Choose the correct synonym for 'Thrifty'.",
+    "options": ["Wasteful", "Economical", "Extravagant", "Generous"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A bag contains 5 red and 3 blue balls. What is the probability of drawing a red ball?",
+    "options": ["3/5", "5/8", "3/8", "1/2"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the missing term: 1, 3, 7, 15, 31, ?",
+    "options": ["32", "45", "63", "60"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the antonym of 'Amicable'.",
+    "options": ["Friendly", "Hostile", "Kind", "Pleasant"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "What is the average of the first five even numbers?",
+    "options": ["4", "5", "6", "8"],
     "answer": 2,
     "section": "Quant"
+  },
+  {
+    "question": "Complete the analogy: Clock : Time :: Thermometer : ?",
+    "options": ["Heat", "Radiation", "Temperature", "Energy"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Fill in the blank: I have been living here ______ 2010.",
+    "options": ["for", "since", "from", "at"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If the side of a square is doubled, its area increases by how many times?",
+    "options": ["2 times", "3 times", "4 times", "8 times"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Which word is spelled correctly?",
+    "options": ["Environment", "Enviroment", "Enviorment", "Environement"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'FISH' is coded as 'EHRG', what is the code for 'JUNGLE'?",
+    "options": ["ITMFKD", "ITNFKD", "KVOHMF", "ITMFLD"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "What is the value of 15% of 150?",
+    "options": ["22", "22.5", "25", "20.5"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": [
+      "He don't have a car.",
+      "He doesn't has a car.",
+      "He doesn't have a car.",
+      "He not have a car."
+    ],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "In a row of 20 people, A is 5th from the left. What is his position from the right?",
+    "options": ["15th", "16th", "14th", "17th"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Simplify: 4 + 4 × 4 - 4 ÷ 4",
+    "options": ["7", "15", "19", "3"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the odd one out: Gold, Silver, Copper, Coal.",
+    "options": ["Gold", "Silver", "Copper", "Coal"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the synonym for 'Reluctant'.",
+    "options": ["Eager", "Willing", "Unwilling", "Ready"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "A train travels at 72 km/hr. Its speed in meters per second is:",
+    "options": ["20 m/s", "25 m/s", "30 m/s", "15 m/s"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Next number in series: 1000, 200, 40, ?",
+    "options": ["20", "10", "8", "5"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the part of speech for the word 'Under' in: 'The cat is under the bed.'",
+    "options": ["Adjective", "Preposition", "Conjunction", "Adverb"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "What is 1/4 + 1/2?",
+    "options": ["1/6", "2/6", "3/4", "1/2"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'PEN' is written as '31', what is 'PARK' written as?",
+    "options": ["42", "45", "41", "44"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Select the correct plural form.",
+    "options": ["Cactus", "Cactuses", "Cacti", "Cactii"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "What is 30% of 60 added to 40% of 80?",
+    "options": ["40", "50", "60", "70"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the next term: Z, X, V, T, ?",
+    "options": ["S", "R", "Q", "P"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Acommodate", "Accommodate", "Accomodate", "Acomodate"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Which of these is a synonym for 'Vibrant'?",
+    "options": ["Dull", "Energetic", "Pale", "Fragile"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A can do a piece of work in 10 days and B in 15 days. How many days will they take together?",
+    "options": ["5", "6", "8", "9"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Complete the series: 3, 6, 12, 24, 48, ?",
+    "options": ["60", "72", "96", "108"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correct antonym for 'Humble'.",
+    "options": ["Modest", "Arrogant", "Polite", "Quiet"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "What is the decimal equivalent of 1/8?",
+    "options": ["0.125", "0.25", "0.5", "0.15"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'CUP' is to 'TEA', then 'BOWL' is to ?",
+    "options": ["Spoon", "Soup", "Plate", "Kitchen"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Fill in the blank: I ______ my breakfast an hour ago.",
+    "options": ["eat", "eaten", "ate", "have eaten"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "What is the ratio of 30 minutes to 1.5 hours?",
+    "options": ["1:2", "1:3", "2:1", "3:1"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'SCHOOL' is coded as '123445', what is 'COOL'?",
+    "options": ["2334", "3445", "1234", "2445"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Recieve", "Receive", "Receeve", "Receve"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A rectangle has an area of 50 sq cm. If length is 10 cm, find the width.",
+    "options": ["4 cm", "5 cm", "6 cm", "10 cm"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Find the odd one out: 2, 3, 5, 7, 9, 11.",
+    "options": ["3", "7", "9", "11"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Which word is a verb in: 'The eagle flies high'?",
+    "options": ["Eagle", "Flies", "High", "The"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "What is 100% of 50?",
+    "options": ["50", "100", "150", "0"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'A' is taller than 'B', and 'B' is taller than 'C', who is the shortest?",
+    "options": ["A", "B", "C", "Cannot tell"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the conjunction: 'He worked hard, yet he failed.'",
+    "options": ["Hard", "Yet", "He", "Failed"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "The diameter of a circle is 14 cm. What is its radius?",
+    "options": ["7 cm", "14 cm", "21 cm", "28 cm"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Next number in series: 2, 5, 10, 17, ?",
+    "options": ["24", "25", "26", "27"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Select the correct plural of 'Wife'.",
+    "options": ["Wifes", "Wives", "Wifees", "Wive"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Solve: 5 + 5 / 5",
+    "options": ["2", "6", "10", "1"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'BOY' is coded as '2-15-25', how is 'CAT' coded?",
+    "options": ["3-1-20", "3-2-21", "2-1-19", "4-2-21"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correct article: He is ______ honest man.",
+    "options": ["a", "an", "the", "no article"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A shopkeeper gives a 10% discount on a ₹500 item. What is the selling price?",
+    "options": ["₹400", "₹450", "₹490", "₹410"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "How many months have 28 days?",
+    "options": ["1", "6", "12", "None"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the pronoun: 'They went to the market.'",
+    "options": ["Went", "Market", "They", "To"],
+    "answer": 2,
+    "section": "English"
   }
 ]
