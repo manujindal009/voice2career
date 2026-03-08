@@ -1,290 +1,842 @@
 [
   {
-    "question": "If A can do a work in 12 days, B in 15 days, and C in 20 days, in how many days can they complete the work together?",
-    "options": ["5", "4", "3", "6"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Find compound interest on ₹5000 at 10% p.a for 3 years.",
-    "options": ["₹1500", "₹1550", "₹1655", "₹1600"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "A man sells an article at 20% profit. If he had bought it at 10% less and sold at ₹60 more, profit would be 40%. Find cost price.",
-    "options": ["₹500", "₹600", "₹750", "₹800"],
+    "question": "Choose the most appropriate word to fill the blank: The diplomat’s ______ response was intended to avoid committing to either side of the conflict.",
+    "options": ["Equivocal", "Pellucid", "Strident", "Magnanimous"],
     "answer": 0,
-    "section": "Quant"
-  },
-  {
-    "question": "Probability of getting 3 heads when tossing 3 coins?",
-    "options": ["1/2", "1/4", "1/8", "3/8"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "If the ratio of efficiencies of A and B is 3:4 and B finishes work in 12 days, how many days will A take?",
-    "options": ["16", "18", "20", "14"],
-    "answer": 0,
-    "section": "Quant"
-  },
-
-  {
-    "question": "Find next term: 2, 6, 15, 31, 56, ?",
-    "options": ["90", "92", "95", "94"],
-    "answer": 0,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If 8 men or 12 women can complete a work in 10 days, how many days will 4 men and 6 women take?",
-    "options": ["15", "20", "10", "12"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Find simple interest on ₹8000 at 7.5% for 4 years.",
-    "options": ["₹2000", "₹2400", "₹1800", "₹2200"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "If the selling price of 20 articles equals cost price of 25 articles, find profit percentage.",
-    "options": ["20%", "25%", "30%", "15%"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "A train 120 m long crosses a pole in 6 sec. Find speed.",
-    "options": ["60 km/h", "72 km/h", "80 km/h", "90 km/h"],
-    "answer": 1,
-    "section": "Quant"
-  },
-
-  {
-    "question": "Find number of ways to arrange 5 people in a row.",
-    "options": ["60", "100", "120", "150"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "If a number is divided by 296, remainder is 75. What is remainder when divided by 37?",
-    "options": ["1", "2", "3", "4"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If cost price is increased by 20% and selling price remains same, what is new profit percentage if earlier profit was 25%?",
-    "options": ["0%", "5%", "10%", "15%"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "A sum becomes ₹9680 in 2 years and ₹10648 in 3 years at compound interest. Find rate.",
-    "options": ["8%", "9%", "10%", "12%"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct synonym of 'Pragmatic'.",
-    "options": ["Idealistic", "Practical", "Theoretical", "Abstract"],
-    "answer": 1,
-    "section": "English"
-  },
-
-  {
-    "question": "Find missing number: 4, 18, 48, 100, ?",
-    "options": ["180", "190", "196", "200"],
-    "answer": 2,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If 5 machines produce 500 units in 4 hours, how many units will 8 machines produce in 5 hours?",
-    "options": ["1000", "1250", "1500", "2000"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "If x² - 5x + 6 = 0, find x.",
-    "options": ["2 & 3", "3 & 4", "1 & 6", "2 & 4"],
-    "answer": 0,
-    "section": "Quant"
-  },
-  {
-    "question": "Find next: 1, 4, 9, 16, 25, ?",
-    "options": ["30", "35", "36", "49"],
-    "answer": 2,
-    "section": "Reasoning"
-  },
-  {
-    "question": "A and B together can do a work in 6 days. A alone in 10 days. B alone?",
-    "options": ["12", "15", "16", "18"],
-    "answer": 1,
-    "section": "Quant"
-  },
-
-  {
-    "question": "If selling price is doubled and cost price remains same, profit becomes 300%. Find original profit %.",
-    "options": ["100%", "150%", "200%", "50%"],
-    "answer": 0,
-    "section": "Quant"
-  },
-  {
-    "question": "Find probability of drawing a king from deck.",
-    "options": ["1/13", "1/26", "1/4", "1/52"],
-    "answer": 0,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct passive: 'They are building a bridge.'",
-    "options": [
-      "A bridge is built by them.",
-      "A bridge was built by them.",
-      "A bridge is being built by them.",
-      "A bridge has been built."
-    ],
-    "answer": 2,
     "section": "English"
   },
   {
-    "question": "Find next: 7, 14, 28, 56, 112, ?",
-    "options": ["200", "224", "240", "250"],
-    "answer": 1,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If log10 1000 = ?",
-    "options": ["2", "3", "1", "4"],
-    "answer": 1,
-    "section": "Quant"
-  },
-
-  {
-    "question": "If A does 2/5 work in 8 days, total days to finish?",
-    "options": ["20", "18", "16", "24"],
+    "question": "If $x + y + z = 13$ and $x^2 + y^2 + z^2 = 69$, what is the value of $xy + yz + zx$?",
+    "options": ["50", "100", "40", "25"],
     "answer": 0,
     "section": "Quant"
   },
   {
-    "question": "Choose correct antonym of 'Alleviate'.",
-    "options": ["Reduce", "Worsen", "Ease", "Relieve"],
-    "answer": 1,
+    "question": "A, B, C, D, E, F, G and H are sitting around a circle facing the center. F is third to the right of C and second to the left of H. D is not an immediate neighbor of C or H. E is to the immediate right of A, who is second to the right of G. Who is sitting second to the left of C?",
+    "options": ["G", "A", "E", "B"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Identify the error in the sentence: 'Had I realized (A) / how close I was (B) / to failing, I would (C) / not have gone to the party (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 3,
     "section": "English"
   },
   {
-    "question": "Find next: 3, 11, 19, 27, ?",
-    "options": ["35", "36", "37", "40"],
+    "question": "Two dice are thrown simultaneously. What is the probability that the sum of the numbers on the faces is a prime number?",
+    "options": ["5/12", "7/12", "1/2", "1/3"],
     "answer": 0,
-    "section": "Reasoning"
-  },
-  {
-    "question": "If a boat goes 30 km downstream in 2 hours and upstream in 3 hours, find speed of boat in still water.",
-    "options": ["10", "12", "15", "18"],
-    "answer": 2,
     "section": "Quant"
   },
   {
-    "question": "How many diagonals in a hexagon?",
-    "options": ["6", "9", "12", "15"],
-    "answer": 1,
-    "section": "Quant"
-  },
-
-  {
-    "question": "Find missing: 5, 20, 60, 120, ?",
-    "options": ["200", "180", "210", "240"],
+    "question": "Statements: All buildings are chalks. No chalk is toffee. All toffees are cups. Conclusions: I. No building is toffee. II. Some chalks are buildings. III. Some cups are toffees.",
+    "options": ["Only I and II follow", "Only II and III follow", "Only I and III follow", "All follow"],
     "answer": 3,
     "section": "Reasoning"
   },
   {
-    "question": "If 3 pipes fill tank in 6 hours. One pipe fills in 12 hrs. Time for remaining 2 pipes?",
-    "options": ["8", "9", "10", "12"],
-    "answer": 1,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct sentence.",
-    "options": [
-      "Each of the boys have done it.",
-      "Each of the boys has done it.",
-      "Each of the boys were done.",
-      "Each of boys has done."
-    ],
+    "question": "Select the synonym of 'Obsequious'.",
+    "options": ["Arrogant", "Servile", "Honest", "Stubborn"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "If average of 10 numbers is 25 and one number 40 replaced by 20, new average?",
-    "options": ["23", "24", "22", "21"],
-    "answer": 2,
+    "question": "A certain sum of money invested at compound interest becomes ₹6400 in 3 years and ₹8000 in 6 years. Find the original sum.",
+    "options": ["₹4800", "₹5120", "₹5000", "₹4096"],
+    "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Find next: 1, 3, 7, 15, 31, ?",
-    "options": ["63", "60", "62", "65"],
+    "question": "If 'ARMY' is coded as '2101325' and 'NAVY' is coded as '1412225', how is 'SHIP' coded?",
+    "options": ["198916", "199816", "189816", "208916"],
     "answer": 0,
     "section": "Reasoning"
   },
-
   {
-    "question": "If sum of angles of polygon is 1440°, number of sides?",
-    "options": ["8", "9", "10", "11"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Find median of 5, 7, 9, 11, 13.",
-    "options": ["7", "8", "9", "10"],
-    "answer": 2,
-    "section": "Quant"
-  },
-  {
-    "question": "Choose correct preposition: He insisted ___ going.",
-    "options": ["for", "on", "in", "with"],
+    "question": "Choose the correct meaning of the idiom: 'To kick the bucket'.",
+    "options": ["To be angry", "To die", "To play football", "To be clumsy"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "If cost increases 10% and consumption decreases 10%, effect on expenditure?",
-    "options": ["No change", "Increase 1%", "Decrease 1%", "Increase 2%"],
+    "question": "A, B and C can do a piece of work in 11 days, 20 days and 55 days respectively. In how many days can the work be completed if A is assisted by B and C on alternate days?",
+    "options": ["7 days", "8 days", "9 days", "10 days"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Find next: 8, 27, 64, 125, ?",
-    "options": ["200", "216", "250", "225"],
-    "answer": 1,
+    "question": "Find the next term in the series: 7, 26, 63, 124, 215, ?",
+    "options": ["342", "343", "511", "512"],
+    "answer": 0,
     "section": "Reasoning"
   },
-
   {
-    "question": "If 4x + 3 = 19, find x.",
-    "options": ["3", "4", "5", "6"],
+    "question": "Choose the word most nearly OPPOSITE in meaning to 'Garrulous'.",
+    "options": ["Talkative", "Reticent", "Verbose", "Loquacious"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A motorboat whose speed is 15 km/hr in still water goes 30 km downstream and comes back in a total of 4 hours 30 minutes. The speed of the stream (in km/hr) is:",
+    "options": ["4", "5", "6", "10"],
     "answer": 1,
     "section": "Quant"
   },
   {
-    "question": "Find variance type pattern: 2, 4, 12, 48, ?",
-    "options": ["200", "240", "300", "400"],
-    "answer": 1,
+    "question": "Identify the logical pattern: If 5 + 3 = 28, 9 + 1 = 810, 2 + 1 = 13, then 5 + 4 = ?",
+    "options": ["19", "91", "18", "20"],
+    "answer": 0,
     "section": "Reasoning"
   },
   {
-    "question": "If sum of two numbers is 30 and product 200, numbers are?",
-    "options": ["10 & 20", "5 & 25", "15 & 15", "12 & 18"],
+    "question": "Select the correct one-word substitute: 'A person who hates women'.",
+    "options": ["Misogynist", "Misanthrope", "Philanthropist", "Misogamist"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A bag contains 6 white and 4 black balls. Two balls are drawn at random. Find the probability that they are of the same color.",
+    "options": ["1/3", "7/15", "8/15", "1/2"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "If 'South-East' becomes 'North', 'North-East' becomes 'West' and so on, what will 'West' become?",
+    "options": ["South-East", "North-East", "South-West", "North-West"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Conscientious", "Consciencious", "Consientious", "Conscientous"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A sum of ₹725 is lent in the beginning of a year at a certain rate of interest. After 8 months, a sum of ₹362.50 more is lent but at the rate twice the former. At the end of the year, ₹33.50 is earned as interest from both the loans. What was the original rate of interest?",
+    "options": ["3.46%", "4.5%", "5%", "6%"],
     "answer": 0,
     "section": "Quant"
   },
   {
-    "question": "Choose synonym of 'Conspicuous'.",
-    "options": ["Hidden", "Noticeable", "Small", "Silent"],
+    "question": "A box contains 2 white balls, 3 black balls, and 4 red balls. In how many ways can 3 balls be drawn from the box, if at least one black ball is to be included in the draw?",
+    "options": ["34", "64", "74", "84"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly opposite in meaning to 'Pusillanimous'.",
+    "options": ["Timid", "Craven", "Intrepid", "Recreant"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Statements: Some keys are staplers. Some staplers are stickers. All stickers are pens. Conclusions: I. Some pens are staplers. II. Some stickers are keys. III. No sticker is a key.",
+    "options": ["Only I follows", "Only II and III follow", "Only either II or III follows", "Only I and either II or III follow"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The income of A, B, and C are in the ratio 7:9:12 and their spending are in the ratio 8:9:15. If A saves 1/4th of his income, then the ratio of the savings of A, B, and C is:",
+    "options": ["56:99:69", "69:56:99", "99:69:56", "56:69:99"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The scientific community was shocked by the ______ of the researcher's data, which suggested a total fabrication of results.",
+    "options": ["Mendacity", "Veracity", "Probity", "Rectitude"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Seven people P, Q, R, S, T, U and V are sitting in a straight line facing North. R is to the immediate left of S and third to the right of T. Q is the neighbor of P and T. V is at the extreme right end. Who is sitting exactly in the middle?",
+    "options": ["P", "Q", "R", "S"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A tank is fitted with 8 pipes, some of which are filling pipes and the others are waste pipes. Each filling pipe can fill the tank in 8 hours, while each waste pipe can empty it in 6 hours. If all pipes are kept open when the tank is full, it takes 6 hours to empty the tank. How many of these are filling pipes?",
+    "options": ["2", "3", "4", "5"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the part of the sentence with an error: Not only the (A) / principal but also (B) / the teachers was (C) / against the proposal (D).",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If 'CLOUDS' is coded as '594321' and 'RAIN' is coded as '8706', how is 'AROUND' coded?",
+    "options": ["784365", "784361", "784362", "783461"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of ₹10,000 is lent at compound interest at 10% for the first year, 12% for the second year, and 15% for the third year. What is the total amount at the end of 3 years?",
+    "options": ["₹13,500.50", "₹14,112.00", "₹14,520.00", "₹15,112.50"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom: 'To play second fiddle'.",
+    "options": ["To play a musical instrument", "To take a subordinate role", "To be the leader", "To cheat someone"],
     "answer": 1,
     "section": "English"
   },
   {
-    "question": "If 1/3 of a number is 40, what is 5/6 of number?",
-    "options": ["80", "90", "100", "120"],
+    "question": "Find the odd one out: 3, 5, 11, 14, 17, 21.",
+    "options": ["14", "17", "21", "Both 14 and 21"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A watch which gains 5 seconds in 3 minutes was set right at 7 a.m. In the afternoon of the same day, when the watch indicated quarter past 4 o'clock, the true time is:",
+    "options": ["59 7/12 min. past 3", "4 p.m.", "58 7/11 min. past 3", "2 3/11 min. past 4"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Diathesis", "Diathysis", "Diethesis", "Diathessis"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In a certain code language, 'it be de' means 'sky is blue'; 'se de' means 'blue color' and 'it lo' means 'is high'. Which code represents 'sky'?",
+    "options": ["it", "be", "de", "lo"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Find the remainder when $2^{31}$ is divided by 5.",
+    "options": ["1", "2", "3", "4"],
     "answer": 2,
     "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Evanescent'.",
+    "options": ["Permanent", "Fleeting", "Bright", "Stable"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 1st January 2004 was Thursday, what day of the week was 1st January 2005?",
+    "options": ["Friday", "Saturday", "Sunday", "Monday"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A, B, and C can do a piece of work in 20, 30, and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?",
+    "options": ["12 days", "15 days", "16 days", "18 days"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the one-word substitute: 'A person who is fluent in two languages'.",
+    "options": ["Bilingual", "Bigot", "Philologist", "Polyglot"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A, B, C, D and E are five friends. A is shorter than B but taller than E. C is the tallest. D is shorter than B and taller than A. Who is the fourth tallest among them?",
+    "options": ["A", "B", "D", "E"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A hemispherical bowl of internal radius 9 cm is full of liquid. This liquid is to be filled into cylindrical bottles of diameter 3 cm and height 4 cm. How many bottles are required?",
+    "options": ["27", "36", "54", "63"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The professor’s ______ style of lecturing made it difficult for students to distinguish between the core concepts and the parenthetical anecdotes.",
+    "options": ["Discursive", "Succinct", "Laconic", "Pithy"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In how many ways can a committee of 5 members be formed from 6 men and 4 women, such that at least one woman is always included?",
+    "options": ["186", "246", "252", "456"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error in the sentence: 'The reason why (A) / he was rejected (B) / was because (C) / he was too young (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Six persons P, Q, R, S, T and U are sitting in two rows, three in each. S is not at the end of any row. T is second to the left of R. P is the neighbor of S and is sitting diagonally opposite to T. Q is the neighbor of R. Who is facing S?",
+    "options": ["P", "Q", "R", "U"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The difference between the compound interest and simple interest on a certain sum at 10% per annum for 3 years is ₹31. Find the sum.",
+    "options": ["₹500", "₹1000", "₹1200", "₹1500"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly opposite in meaning to 'Fastidious'.",
+    "options": ["Meticulous", "Slovenly", "Punctilious", "Fussy"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'FRANCE' is coded as '10-22-5-18-7-9', how is 'GERMANY' coded?",
+    "options": ["11-9-22-17-5-18-29", "11-9-21-17-5-18-29", "11-8-22-17-5-18-29", "10-9-22-17-5-18-29"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A bag contains 2 red, 3 green and 2 blue balls. Two balls are drawn at random. What is the probability that none of the balls drawn is blue?",
+    "options": ["10/21", "11/21", "2/7", "5/7"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom: 'To throw down the gauntlet'.",
+    "options": ["To accept defeat", "To issue a challenge", "To behave rudely", "To surrender"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the next number in the series: 13, 25, 51, 101, 203, ?",
+    "options": ["405", "406", "407", "411"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A clock is set right at 5 a.m. The clock loses 16 minutes in 24 hours. What will be the true time when the clock indicates 10 p.m. on 4th day?",
+    "options": ["11 p.m.", "10 p.m.", "9 p.m.", "12 p.m."],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Capricious'.",
+    "options": ["Stable", "Fickle", "Reasonable", "Decisive"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Statements: All bags are pockets. All pockets are shops. Some shops are malls. Conclusions: I. Some malls are pockets. II. Some shops are bags. III. All pockets are bags.",
+    "options": ["Only I follows", "Only II follows", "Only III follows", "None follow"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The diagonal of a cube is $6/sqrt{3}$ cm. Find its volume.",
+    "options": ["108 cc", "216 cc", "432 cc", "648 cc"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'The study of ancient societies'.",
+    "options": ["Anthropology", "Archaeology", "History", "Ethnology"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'A + B' means A is the daughter of B; 'A * B' means A is the son of B and 'A - B' means A is the wife of B. If P * Q - S, which of the following is true?",
+    "options": ["S is the father of P", "S is the wife of Q", "Q is the father of P", "P is the daughter of Q"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If $a/b = 4/5$ and $b/c = 15/16$, then $(c^2 - a^2) / (c^2 + a^2)$ is:",
+    "options": ["1/7", "7/25", "3/4", "None"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Surveillance", "Surveillence", "Survailance", "Surveillans"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A, B, C, D, E, F, and G are sitting in a row facing North. F is to the immediate right of E. E is 4th to the right of G. C is the neighbor of B and D. Person who is third to the left of D is at one of the ends. Who are the neighbors of B?",
+    "options": ["C and G", "C and E", "G and F", "C and D"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The ratio of the volume of a right circular cone and a right circular cylinder having the same radius and same height is:",
+    "options": ["1:2", "1:3", "2:3", "3:4"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The speaker's ______ remarks during the press conference only served to further polarize the audience.",
+    "options": ["Innocuous", "Incendiary", "Insipid", "Inscrutable"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A can do a certain work in the same time in which B and C together can do it. If A and B together could do it in 10 days and C alone in 50 days, then B alone could do it in:",
+    "options": ["20 days", "25 days", "30 days", "35 days"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error in the sentence: 'Scarcely had (A) / the sun risen (B) / than the (C) / fog disappeared (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "In a certain code language, '324' means 'Light is bright', '629' means 'Girl is beautiful', and '4758' means 'Bright sunshine and rain'. Which digit represents 'Light'?",
+    "options": ["3", "2", "4", "7"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A container contains 40 litres of milk. From this container 4 litres of milk was taken out and replaced by water. This process was repeated further two times. How much milk is now contained by the container?",
+    "options": ["26.34 litres", "27.36 litres", "28 litres", "29.16 litres"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly opposite in meaning to 'Obdurate'.",
+    "options": ["Stubborn", "Flexible", "Callous", "Adamant"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'PALE' is coded as '2134' and 'EARTH' is coded as '41590', how is 'PEARL' coded?",
+    "options": ["24153", "21453", "25413", "24150"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of money doubles itself in 4 years at compound interest. It will amount to 8 times itself at the same rate of interest in:",
+    "options": ["12 years", "16 years", "20 years", "24 years"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom: 'To hold a candle to'.",
+    "options": ["To support someone", "To be nearly as good as", "To light the way", "To ignore the facts"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the next term in the series: 2, 12, 36, 80, 150, ?",
+    "options": ["252", "250", "248", "260"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A card is drawn from a pack of 52 cards. The probability of getting a queen of club or a king of heart is:",
+    "options": ["1/13", "2/13", "1/26", "1/52"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Lethargic'.",
+    "options": ["Active", "Listless", "Vibrant", "Quick"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Statements: All stars are planets. All planets are galaxies. No galaxy is a moon. Conclusions: I. No star is a moon. II. Some galaxies are stars. III. Some planets are stars.",
+    "options": ["Only I follows", "Only II and III follow", "All follow", "None follow"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the length of the diagonal of a square is 20 cm, then its area must be:",
+    "options": ["200 sq cm", "400 sq cm", "100 sq cm", "300 sq cm"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'A person who believes that pleasure is the chief good'.",
+    "options": ["Stoic", "Hedonist", "Epicure", "Sensualist"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'A $ B' means A is the brother of B; 'A @ B' means A is the wife of B; 'A # B' means A is the daughter of B. Which of the following means U is the father-in-law of P?",
+    "options": ["P @ Q # R $ U", "P @ Q $ R # U", "U $ R # Q @ P", "None of these"],
+    "answer": 3,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?",
+    "options": ["0", "1", "10", "19"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Etiquette", "Etiquete", "Etiqute", "Etiquitte"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In a group of 6 men and 4 women, a committee of 4 is to be formed. What is the probability that the committee contains exactly 2 women?",
+    "options": ["3/7", "1/2", "5/14", "9/14"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The CEO's ______ leadership style often alienated his subordinates, who preferred a more collaborative approach.",
+    "options": ["Democratic", "Autocratic", "Laissez-faire", "Altruistic"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'MACHINE' is coded as '19-7-9-14-15-20-11', how will 'DANGER' be coded?",
+    "options": ["10-7-20-13-11-24", "10-7-20-16-11-24", "13-7-20-9-11-25", "11-7-20-16-11-24"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of ₹12,000 deposited at compound interest becomes double after 5 years. After 20 years, it will become:",
+    "options": ["₹96,000", "₹1,20,000", "₹1,24,000", "₹1,92,000"],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: 'The furniture (A) / in this room (B) / are old (C) / and worn out (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Statements: All fish are tortoises. No tortoise is a crocodile. Conclusions: I. No crocodile is a fish. II. No fish is a crocodile.",
+    "options": ["Only I follows", "Only II follows", "Both I and II follow", "Neither follows"],
+    "answer": 2,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sphere and a cube have the same surface area. The ratio of the volume of the sphere to that of the cube is:",
+    "options": ["$/sqrt{/pi}:/sqrt{6}$", "$/sqrt{6}:/sqrt{/pi}$", "$/sqrt{3}:/sqrt{/pi}$", "$2:/qrt{/pi}$"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly synonymous with 'Incorrigible'.",
+    "options": ["Reformable", "Unmanageable", "Pliable", "Submissive"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number: 3, 10, 29, 66, 127, ?",
+    "options": ["214", "218", "225", "210"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Two dice are tossed. The probability that the total score is a prime number is:",
+    "options": ["1/6", "5/12", "1/2", "7/9"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct meaning of the idiom: 'To beat about the bush'.",
+    "options": ["To talk in a roundabout way", "To talk directly", "To cut bushes", "To work hard"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'P @ Q' means P is the father of Q; 'P * Q' means P is the mother of Q; 'P # Q' means P is the husband of Q. How is A related to D in 'A * B # C @ D'?",
+    "options": ["Grandmother", "Mother", "Aunt", "Sister"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "If the length of a rectangle is increased by 20% and the width is decreased by 20%, the area:",
+    "options": ["Increases by 4%", "Decreases by 4%", "Remains unchanged", "Decreases by 2%"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Accommodate", "Acomodate", "Accomodate", "Acommodate"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In a row of 40 students, A is 13th from the left and B is 9th from the right. How many students are between A and B?",
+    "options": ["16", "18", "20", "22"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The diagonal of a square is $4/sqrt{2}$ cm. The diagonal of another square whose area is double that of the first square is:",
+    "options": ["8 cm", "$8/sqrt{2}$ cm", "4 cm", "16 cm"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'A place where government records are kept'.",
+    "options": ["Library", "Archive", "Museum", "Pantry"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Find the odd one out: 3, 5, 7, 12, 17, 19.",
+    "options": ["5", "12", "17", "19"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A boat can travel with a speed of 13 km/hr in still water. If the speed of the stream is 4 km/hr, find the time taken by the boat to go 68 km downstream.",
+    "options": ["3 hours", "4 hours", "5 hours", "6 hours"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the correct synonym for 'Clandestine'.",
+    "options": ["Overt", "Secret", "Legal", "Public"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "A, B, C, D, E, F, G, and H are sitting around a square table facing the center. Four sit at the corners and four at the middle of the sides. A sits second to the right of F. F sits in the middle of one of the sides. C sits fourth to the right of H. H does not sit at any of the corners. G sits second to the left of D. D is not an immediate neighbor of F. Who sits third to the left of B?",
+    "options": ["E", "G", "A", "C"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The sum of the radius of the base and the height of a solid cylinder is 37m. If the total surface area of the solid cylinder is 1628 sq.m, find the volume of the cylinder.",
+    "options": ["4620 cu.m", "4851 cu.m", "5240 cu.m", "None of these"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The scientist’s ______ explanation was so dense and filled with jargon that even his peers struggled to grasp the core hypothesis.",
+    "options": ["Abstruse", "Lucid", "Pellucid", "Exoteric"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In how many ways can 5 prizes be distributed among 4 students, such that every student may receive any number of prizes?",
+    "options": ["1024", "625", "20", "120"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error: 'The reason for (A) / his failure (B) / is because (C) / he did not work hard (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Statements: All plates are spoons. Some spoons are forks. All forks are knives. Conclusions: I. Some knives are spoons. II. Some forks are plates. III. Some knives are plates.",
+    "options": ["Only I follows", "Only II follows", "Only III follows", "None follow"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A bag contains 2 red, 3 green, and 2 blue balls. Two balls are drawn at random. What is the probability that none of the balls drawn is blue?",
+    "options": ["10/21", "11/21", "2/7", "5/7"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the word most nearly opposite in meaning to 'Alacrity'.",
+    "options": ["Eagerness", "Promptness", "Apathy", "Zeal"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "If 'ORANGE' is coded as '16-19-2-15-8-6', how will 'BANANA' be coded?",
+    "options": ["3-2-15-2-15-2", "3-2-15-3-15-3", "2-1-14-2-14-2", "4-3-16-4-16-4"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A man can row 9 km/h in still water. It takes him thrice as long to row up as to row down the river. Find the rate of the stream.",
+    "options": ["3 km/h", "4.5 km/h", "5 km/h", "6 km/h"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom: 'To hold a brief for'.",
+    "options": ["To support someone's cause", "To write a short letter", "To wait for someone", "To be in a hurry"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 1st January 2004 was Thursday, what day of the week was 1st January 2008?",
+    "options": ["Monday", "Tuesday", "Wednesday", "Sunday"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A watch which gains uniformly is 2 minutes slow at noon on Monday and is 4 min. 48 sec fast at 2 p.m. on the following Monday. When was it correct?",
+    "options": ["2 p.m. on Tuesday", "2 p.m. on Wednesday", "3 p.m. on Thursday", "1 p.m. on Friday"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Ephemeral'.",
+    "options": ["Eternal", "Transient", "Stable", "Permanent"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man’s father is my father’s son.' Whose photograph was it?",
+    "options": ["His own", "His son's", "His father's", "His nephew's"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The perimeter of a certain sector of a circle of radius 5.6m is 27.2m. Find the area of the sector.",
+    "options": ["44.8 sq.m", "45.6 sq.m", "42.2 sq.m", "None of these"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'One who collects coins as a hobby'.",
+    "options": ["Philatelist", "Ornithologist", "Numismatist", "Anthropologist"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Find the missing number in the series: 4, 18, 48, 100, 180, 294, ?",
+    "options": ["416", "448", "484", "512"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of money doubles itself at compound interest in 15 years. In how many years will it become eight times itself?",
+    "options": ["30 years", "45 years", "60 years", "75 years"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Renaissance", "Renaisance", "Rennaisance", "Renaissence"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In how many ways can 6 people be seated around a circular table such that two particular people must always sit next to each other?",
+    "options": ["24", "48", "120", "240"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A cone, a hemisphere, and a cylinder stand on equal bases and have the same height. The ratio of their volumes is:",
+    "options": ["1:2:3", "2:1:3", "3:2:1", "1:3:2"],
+    "answer": 0,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the most appropriate word to fill the blank: The witness’s testimony was so ______ that it was nearly impossible for the jury to determine the sequence of events.",
+    "options": ["Inchoate", "Lucid", "Cogent", "Pellucid"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "A box contains 10 light bulbs, of which 3 are defective. If a sample of 2 bulbs is drawn at random, what is the probability that at least one is defective?",
+    "options": ["7/15", "8/15", "1/2", "2/3"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Identify the error in the sentence: 'The novel is (A) / more interesting (B) / than any book (C) / I have read (D).'",
+    "options": ["A", "B", "C", "D"],
+    "answer": 2,
+    "section": "English"
+  },
+  {
+    "question": "Statements: No teacher is a student. Some students are researchers. All researchers are innovators. Conclusions: I. Some innovators are students. II. Some innovators are researchers. III. No innovator is a teacher.",
+    "options": ["Only I follows", "Only I and II follow", "Only II and III follow", "All follow"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A can do a piece of work in 20 days and B in 30 days. They work together for 7 days and then both leave. Then C alone finishes the remaining work in 10 days. In how many days will C finish the whole work alone?",
+    "options": ["20 days", "24 days", "30 days", "40 days"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the synonym of 'Pulchritudinous'.",
+    "options": ["Beautiful", "Ugly", "Strong", "Wealthy"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "If 'WATER' is coded as '23-1-20-5-18' and 'OCEAN' is coded as '15-3-5-1-14', how is 'RIVER' coded?",
+    "options": ["18-9-22-5-18", "18-10-22-6-18", "17-9-21-5-17", "19-9-23-5-19"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A sum of ₹2,400 amounts to ₹3,264 in 4 years at a certain rate of simple interest. If the rate of interest is increased by 1%, the same sum in the same time would amount to:",
+    "options": ["₹3,340", "₹3,360", "₹3,420", "₹3,450"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correct meaning of the idiom: 'To hold water'.",
+    "options": ["To be valid or reasonable", "To be filled with water", "To be leaking", "To be very thirsty"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "In a family, there are six members A, B, C, D, E and F. A and B are a married couple, A being the male member. D is the only son of C, who is the brother of A. E is the sister of D. B is the daughter-in-law of F, whose husband has died. How is E related to C?",
+    "options": ["Sister", "Daughter", "Cousin", "Mother"],
+    "answer": 1,
+    "section": "Reasoning"
+  },
+  {
+    "question": "Two pipes can fill a tank in 15 and 12 hours respectively and a third pipe can empty it in 4 hours. If the pipes are opened in order at 8, 9 and 11 a.m. respectively, the tank will be emptied at:",
+    "options": ["11:40 a.m.", "12:40 p.m.", "1:40 p.m.", "2:40 p.m."],
+    "answer": 3,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the antonym of 'Enervate'.",
+    "options": ["Weaken", "Invigorate", "Tire", "Exhaust"],
+    "answer": 1,
+    "section": "English"
+  },
+  {
+    "question": "If 'A + B' means A is the father of B; 'A - B' means A is the mother of B; 'A * B' means A is the brother of B; 'A / B' means A is the sister of B. Which of the following means H is the paternal uncle of T?",
+    "options": ["H * S + T", "H / S + T", "H + S * T", "S + T / H"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "The diagonal of a cube is decreased by 20%. The percentage decrease in its surface area is:",
+    "options": ["20%", "36%", "40%", "44%"],
+    "answer": 1,
+    "section": "Quant"
+  },
+  {
+    "question": "Select the correct one-word substitute: 'The act of speaking irreverently about sacred things'.",
+    "options": ["Blasphemy", "Atheism", "Heresy", "Sacrilege"],
+    "answer": 0,
+    "section": "English"
+  },
+  {
+    "question": "Look at this series: 8, 43, 11, 41, __, 39, 17. What number should fill the blank?",
+    "options": ["14", "15", "40", "44"],
+    "answer": 0,
+    "section": "Reasoning"
+  },
+  {
+    "question": "A merchant has 1000 kg of sugar, part of which he sells at 8% profit and the rest at 18% profit. He gains 14% on the whole. The quantity sold at 18% profit is:",
+    "options": ["400 kg", "560 kg", "600 kg", "640 kg"],
+    "answer": 2,
+    "section": "Quant"
+  },
+  {
+    "question": "Choose the correctly spelled word.",
+    "options": ["Liaison", "Liason", "Liaisonne", "Liasone"],
+    "answer": 0,
+    "section": "English"
   }
 ]
