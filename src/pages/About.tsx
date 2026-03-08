@@ -1,7 +1,11 @@
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function About() {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-950 via-slate-900 to-slate-950 text-white px-6 py-20">
