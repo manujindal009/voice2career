@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import {Target,Clock,ArrowRight,BarChart3,} from "lucide-react";
+import { ArrowLeft } from "lucide-react";
 
 const TESTS = [
   {
@@ -51,6 +52,13 @@ export default function MockTests() {
 
   return (
     <div className="min-h-screen bg-white px-10 py-12">
+     <button
+  onClick={() => navigate(-1)}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
+     
       {/* HEADER */}
       <div className="mb-12">
         <h1 className="text-3xl font-bold flex items-center gap-3">
@@ -68,6 +76,7 @@ export default function MockTests() {
           const c = colorMap[test.color];
 
           return (
+            
             <div
               key={test.id}
               className="bg-white rounded-2xl border p-8 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all"

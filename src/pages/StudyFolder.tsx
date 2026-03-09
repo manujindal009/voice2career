@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Download, FileText } from "lucide-react";
+import { useNavigate} from "react-router-dom";
 
 /* ================= DATA ================= */
 
@@ -29,6 +30,7 @@ const CONTENT: Record<
 
 export default function StudyFolder() {
   const { folderId } = useParams();
+  const navigate = useNavigate();
   const [activePdf, setActivePdf] = useState<string | null>(null);
 
   const folder = folderId ? CONTENT[folderId] : null;
@@ -41,7 +43,15 @@ export default function StudyFolder() {
 
   return (
     <div className="min-h-screen bg-muted/30">
-      <div className="max-w-[1400px] mx-auto grid grid-cols-12 gap-6 px-6 py-6">
+
+<button
+  onClick={() => navigate(-1)}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
+
+  <div className="max-w-[1400px] mx-auto grid grid-cols-12 gap-6 px-6 py-16">
 
         {/* LEFT SIDEBAR */}
         <aside className="col-span-12 lg:col-span-3">

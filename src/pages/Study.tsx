@@ -12,6 +12,7 @@ import {
   Puzzle,
   MessageSquareText,
 } from "lucide-react";
+
 console.log("🔥 STUDY.TSX RENDERED");
 
 /*
@@ -122,6 +123,19 @@ export default function Study() {
 
   return (
     <div className="min-h-screen bg-white px-6 py-8">
+      <button
+  onClick={() => {
+    if (folder) {
+      navigate("/study");
+    } else {
+      navigate(-1);
+    }
+  }}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
+      
       {/* HEADER */}
       <div className="max-w-7xl mx-auto mb-10">
         <h1 className="text-3xl font-bold">

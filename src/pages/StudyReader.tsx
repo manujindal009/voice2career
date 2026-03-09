@@ -44,15 +44,12 @@ export default function StudyReader() {
       >
         <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
           <button
-            onClick={() => navigate(-1)}
-            style={{
-              border: "none",
-              background: "transparent",
-              cursor: "pointer",
-            }}
-          >
-            <ArrowLeft />
-          </button>
+  onClick={() => navigate(-1)}
+  className="flex items-center gap-2 border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  <ArrowLeft className="h-4 w-4" />
+  Back
+</button>
 
           <div
             style={{

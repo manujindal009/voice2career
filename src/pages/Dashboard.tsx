@@ -270,7 +270,59 @@ ${username}`
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-8 py-10">
+     <div className="max-w-7xl mx-auto pl-8 pr-8 py-10">
+      {/* LEFT QUICK ACTION DOCK */}
+<div className="hidden lg:flex fixed left-2 top-1/2 -translate-y-1/2 flex-col items-center z-50">
+
+  {/* TITLE */}
+  <p className="text-xs text-gray-500 mb-2 font-medium tracking-wide">
+    Quick Actions
+  </p>
+
+  {/* DOCK */}
+  <div className="flex flex-col items-center gap-4 bg-white/70 backdrop-blur-xl border shadow-lg rounded-2xl p-3">
+
+  <DockAction
+    icon={<Video size={20} />}
+   label="Start Interview"
+    onClick={() => navigate("/interview")}
+  />
+
+  <DockAction
+    icon={<HistoryIcon size={20}  />}
+    label="Interview History"
+    onClick={() => navigate("/history")}
+  />
+
+  <DockAction
+    icon={<MessageSquare size={20} />}
+    label="AI Assistant"
+    onClick={() => navigate("/assistant")}
+  />
+
+  <DockAction
+    icon={<BookOpen size={20}  />}
+   label="Study Material"
+    onClick={() => navigate("/study-materials")}
+  />
+
+  <DockAction
+    icon={<Target size={20}  />}
+    label="Start Mock Tests"
+    onClick={() => navigate("/mock-tests")}
+  />
+
+  {isAdmin && (
+    <DockAction
+      icon={<BarChart3  size={20} />}
+      label="Admin Panel"
+      onClick={() => navigate("/admin")}
+    />
+  )}
+</div>
+</div>
+<div className="flex-1">
+
         {/* HERO */}
         <div className="rounded-2xl border bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 p-8 flex justify-between mb-10">
           <div>
@@ -421,7 +473,12 @@ ${username}`
         </CardContent>
       </Card>
     ) : (
-      Object.entries(groupedMockTests).map(
+      Object.entries(groupedMockTests)
+.sort(([a], [b]) => {
+  const order = ["easy-medium", "medium-hard", "hard"];
+  return order.indexOf(a) - order.indexOf(b);
+})
+.map(
   ([testId, attempts]: [string, any[]]) => {
     const totalAttempts = attempts.length;
 
@@ -549,10 +606,14 @@ ${username}`
 
       </div>
     </div>
+     </div>
   );
 }
 
 /* ================= HELPERS ================= */
+
+
+
 
 function Stat({ icon, title, value, iconBg = "bg-gray-100", children }: any) {
   return (
@@ -622,6 +683,43 @@ function Benefit({ text }: { text: string }) {
         ✓
       </span>
       <span>{text}</span>
+    </div>
+  );
+}
+function DockAction({ icon, label, onClick }: any) {
+
+  const colorMap: any = {
+    "Start Interview": "bg-blue-50 text-blue-600",
+    "Interview History": "bg-indigo-50 text-indigo-600",
+    "AI Assistant": "bg-gray-100 text-black-600",
+    "Study Material": "bg-green-50 text-green-600",
+    "Start Mock Tests": "bg-red-50 text-red-600",
+    "Admin Panel": "bg-yellow-50 text-yellow-600",
+  };
+
+  return (
+    <div className="group relative flex flex-col items-center">
+
+      <span className="absolute left-16 opacity-0 group-hover:opacity-100 transition bg-black text-white text-xs px-2 py-1 rounded-md whitespace-nowrap">
+        {label}
+      </span>
+
+      <div
+        onClick={onClick}
+        className={`
+        h-12 w-12
+        flex items-center justify-center
+        rounded-xl
+        ${colorMap[label] || "bg-gray-100"}
+        transition-all duration-300 ease-out
+        transform
+        group-hover:scale-150
+        cursor-pointer
+        `}
+      >
+        {icon}
+      </div>
+
     </div>
   );
 }

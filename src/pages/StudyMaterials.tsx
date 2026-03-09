@@ -1,4 +1,4 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {Folder,FolderOpen,BookOpen,FileText,Download,ArrowLeft,CloudCog,Database,Brain,Files,Target,} from "lucide-react";
 import { url } from "inspector"
 /* ================= TYPES ================= */
@@ -1048,7 +1048,17 @@ const slug = (s: string) =>
 /* ================= COMPONENT ================= */
 
 export default function StudyMaterials() {
+
   const [params, setParams] = useSearchParams();
+  const navigate =useNavigate();
+  const BackButton = () => (
+  <button
+    onClick={() => navigate(-1)}
+    className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+  >
+    ← Back
+  </button>
+);
 
   const folderKey = params.get("folder");
   const subKey = params.get("sub");
@@ -1113,7 +1123,8 @@ export default function StudyMaterials() {
   if (folder && subfolder) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-white-1000 to-white-1000 px-10 py-8">
-        <h1 className="text-2xl font-bold mb-8 flex items-center gap-3">
+        <BackButton />
+        <h1 className="text-2xl font-bold mb-8 mt-8 flex items-center gap-3">
           <FolderOpen className="h-5 w-6 text-indigo-600" />
           {subfolder.name}
         </h1>
@@ -1170,7 +1181,8 @@ export default function StudyMaterials() {
   if (folder) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-white-1000 to-white-1000 px-10 py-10">
-        <h1 className="text-2xl font-bold mb-10 flex items-center gap-3">
+        <BackButton />
+        <h1 className="text-2xl font-bold mb-8 mt-8 flex items-center gap-3">
           {folder.icon}
           {folder.name}
         </h1>
@@ -1205,7 +1217,9 @@ export default function StudyMaterials() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-white-1000 to-white-1000 px-10 py-12">
-      <h1 className="text-3xl font-bold mb-12">
+      <BackButton/>
+      
+      <h1 className="text-3xl font-bold mb-8 mt-8">
         📚 Study Materials
       </h1>
 

@@ -227,6 +227,13 @@ const handleProUpgrade = async () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 py-16 px-6">
+      <button
+  onClick={() => navigate(-1)}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
+
       <div className="max-w-[1200px] mx-auto space-y-14">
 
         {/* HEADER */}
@@ -269,7 +276,7 @@ const handleProUpgrade = async () => {
               </div>
 
               <div className="mt-4 text-sm text-gray-500 space-y-1">
-                <p>📍 {location}</p>
+                {/* <p>📍 {location}</p> */}
                 <p>✉ {user?.email}</p>
               </div>
             </div>
@@ -308,11 +315,27 @@ const handleProUpgrade = async () => {
 
           <div className="col-span-2 bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
             <h2 className="text-lg font-semibold mb-4">
-              About
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
-              {bio}
-            </p>
+  About
+</h2>
+
+{bio ? (
+  <p className="text-gray-600 leading-relaxed">
+    {bio}
+  </p>
+) : (
+  <div className="border border-dashed border-gray-300 rounded-xl py-8 text-center">
+    <p className="text-gray-400 text-sm mb-3">
+      You haven't added a bio yet.
+    </p>
+
+    <button
+      onClick={() => setEditing(true)}
+      className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm"
+    >
+      Add your bio
+    </button>
+  </div>
+)}
           </div>
 
           <div className="bg-white/80 backdrop-blur border border-gray-200 p-8 rounded-3xl shadow-md hover:shadow-lg transition">
@@ -375,33 +398,89 @@ const handleProUpgrade = async () => {
 
         {/* ACCURACY */}
 <div className="bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
-  <h2 className="text-lg font-semibold mb-6">
-    Accuracy Growth
+ <div className="mb-6">
+
+  <h2 className="text-lg font-semibold">
+    Mock Test Accuracy Trend
   </h2>
+
+  <p className="text-sm text-gray-500">
+    Last {accuracyHistory.length} mock tests performance
+  </p>
+
+</div>
+
+<div className="flex gap-8 mb-6 text-sm text-gray-600">
+
+  <div>
+    <p className="text-gray-400">Average</p>
+    <p className="font-semibold">{avgAccuracy}%</p>
+  </div>
+
+  <div>
+    <p className="text-gray-400">Best</p>
+    <p className="font-semibold">{bestAccuracy}%</p>
+  </div>
+
+  <div>
+    <p className="text-gray-400">Tests</p>
+    <p className="font-semibold">{mockTests}</p>
+  </div>
+
+</div>
 
   {plan !== "Pro" ? (
     <div className="text-center text-gray-400 py-10">
       🔒 Upgrade to Pro to unlock detailed analytics
     </div>
   ) : (
-    <div className="flex items-end gap-4 h-[240px]">
+    <div className="flex items-end justify-between h-[240px] w-full px-6 border-b border-gray-200 gap-4">
       {accuracyHistory.length === 0 ? (
-        <p className="text-gray-400 text-sm">
-          No test data available
-        </p>
-      ) : (
+  <div className="w-full flex flex-col items-center justify-center text-center py-12">
+    
+    <div className="text-4xl mb-3">📊</div>
+
+    <p className="text-gray-500 text-sm">
+      No accuracy data yet
+    </p>
+
+    <p className="text-gray-400 text-xs mt-1">
+      Attempt mock tests to track your performance
+    </p>
+
+    <button
+      onClick={() => navigate("/mock-tests")}
+      className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm"
+    >
+      Attempt Mock Test
+    </button>
+
+  </div>
+) : (
         accuracyHistory
           .slice(-10)
           .map((acc, i) => (
-            <div key={i} className="flex flex-col items-center">
-              <div className="bg-gradient-to-t from-blue-600 to-cyan-400 w-8 rounded-md transition-all duration-500 shadow-md"
+            <div key={i} className="flex flex-col items-center flex-1">
+              <div
+  className={`${
+    i === accuracyHistory.slice(-10).length - 1
+      ? "bg-gradient-to-t from-purple-600 to-blue-400"
+      : "bg-gradient-to-t from-blue-600 to-cyan-400"
+  } w-full max-w-[40px] rounded-md transition-all duration-500 shadow-md hover:scale-110`}
                 style={{
                   height: `${(acc / 100) * 200}px`,
+transition: "height 0.6s ease"
                 }}
               />
-              <span className="text-xs mt-2">
-                {acc}%
-              </span>
+              <div className="text-center mt-2">
+  <p className="text-xs text-gray-400">
+    Test {i + 1}
+  </p>
+
+  <p className="text-xs font-medium">
+    {acc}%
+  </p>
+</div>
             </div>
           ))
       )}
@@ -410,73 +489,249 @@ const handleProUpgrade = async () => {
 </div>
 
         {/* WEAKEST */}
-        <div className="bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+        {/* WEAKEST SECTION */}
 
-          <h2 className="text-lg font-semibold mb-4">
-            Weakest Section
-          </h2>
+<div className="bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
 
-          <div className="bg-red-50 border border-red-200 p-6 rounded-2xl">
-            <p className="text-red-600 font-semibold">
-  {weakest}
+<h2 className="text-lg font-semibold mb-6">
+Weakest Section
+</h2>
+
+<div className="flex items-center justify-between bg-red-50 border border-red-200 p-6 rounded-xl">
+
+<div>
+
+<p className="text-xs text-gray-500 mb-1">
+Needs Improvement
 </p>
 
-<p className="text-red-500 text-sm mt-1">
-  Most frequently weak topic based on your mock tests
+<p className="text-xl font-semibold text-red-600">
+{weakest}
 </p>
-          </div>
 
-          <div className="bg-blue-50/70 border border-blue-100 p-4 rounded-2xl mt-4 text-sm text-blue-700">
-            Suggestion: Focus more on this topic in upcoming mock tests.
-          </div>
-        </div>
+<p className="text-sm text-gray-500 mt-1">
+Based on your recent mock test performance
+</p>
 
+</div>
 
-{/* BADGES */}
-<div className="bg-white p-6 rounded-2xl shadow space-y-4">
-  <h2 className="text-lg font-semibold">
-    Achievements
-  </h2>
+<div className="text-3xl">
+⚠️
+</div>
 
-  {badges.length === 0 ? (
-    <p className="text-gray-400 text-sm">
-      No badges earned yet
-    </p>
-  ) : (
-    <div className="flex flex-wrap gap-3">
-      {badges.map((badge, i) => (
-        <div
-          key={i}
-          className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-white rounded-full text-sm font-semibold shadow-md"
-        >
-          {badge}
-        </div>
-      ))}
-    </div>
-  )}
+</div>
+
+<div className="mt-5 bg-blue-50 border border-blue-100 p-4 rounded-xl text-sm text-blue-700">
+
+💡 Tip: Practice more questions from <span className="font-semibold">{weakest}</span> to improve your overall accuracy.
+
+</div>
+
+</div>
+
+{/* ACHIEVEMENTS */}
+
+<div className="bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+
+<h2 className="text-lg font-semibold mb-6">
+Achievements
+</h2>
+
+<div className="grid grid-cols-4 gap-6">
+
+{/* BASIC USER */}
+<div className={`relative p-5 border rounded-xl ${
+  mockTests >= 1 ? "bg-yellow-50 border-yellow-200" : "bg-gray-50"
+}`}>
+
+{mockTests < 1 && (
+  <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-xl">
+    <span className="text-4xl">🔒</span>
+  </div>
+)}
+
+<div className={`${mockTests < 1 ? "opacity-30" : ""}`}>
+
+<p className="text-xl mb-2">🎯</p>
+
+<p className="text-sm font-semibold">
+Getting Started
+</p>
+
+<p className="text-xs text-gray-500">
+Complete your first mock test
+</p>
+
+<p className="text-xs mt-2 text-gray-400">
+{mockTests >= 1 ? "Unlocked" : "Locked"}
+</p>
+
+</div>
+
+</div>
+
+{/* CONSISTENT */}
+<div className={`relative p-5 border rounded-xl ${
+  streak >= 7 ? "bg-yellow-50 border-yellow-200" : "bg-gray-50"
+}`}>
+
+{streak < 7 && (
+  <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-xl">
+    <span className="text-4xl">🔒</span>
+  </div>
+)}
+
+<div className={`${streak < 7 ? "opacity-30" : ""}`}>
+
+<p className="text-xl mb-2">🔥</p>
+
+<p className="text-sm font-semibold">
+Consistent
+</p>
+
+<p className="text-xs text-gray-500">
+Maintain 7 day streak
+</p>
+
+<p className="text-xs mt-2 text-gray-400">
+{streak >= 7 ? "Unlocked" : `Progress: ${streak}/7`}
+</p>
+
+</div>
+
+</div>
+{/* DEDICATED */}
+{/* DEDICATED */}
+<div className={`relative p-5 border rounded-xl ${
+  mockTests >= 45 ? "bg-yellow-50 border-yellow-200" : "bg-gray-50"
+}`}>
+
+{mockTests < 45 && (
+  <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-xl">
+    <span className="text-4xl">🔒</span>
+  </div>
+)}
+
+<div className={`${mockTests < 45 ? "opacity-30" : ""}`}>
+
+<p className="text-xl mb-2">💪</p>
+
+<p className="text-sm font-semibold">
+Dedicated
+</p>
+
+<p className="text-xs text-gray-500">
+Complete 45 mock tests
+</p>
+
+<p className="text-xs mt-2 text-gray-400">
+{mockTests >= 45 ? "Unlocked" : `Progress: ${mockTests}/45`}
+</p>
+
+</div>
+
+</div>
+
+{/* SHARP MIND */}
+{/* SHARP MIND */}
+<div className={`relative p-5 border rounded-xl ${
+  avgAccuracy >= 90 ? "bg-yellow-50 border-yellow-200" : "bg-gray-50"
+}`}>
+
+{avgAccuracy < 90 && (
+  <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm rounded-xl">
+    <span className="text-4xl">🔒</span>
+  </div>
+)}
+
+<div className={`${avgAccuracy < 90 ? "opacity-30" : ""}`}>
+
+<p className="text-xl mb-2">🎯</p>
+
+<p className="text-sm font-semibold">
+Sharp Mind
+</p>
+
+<p className="text-xs text-gray-500">
+Reach 90% average accuracy
+</p>
+
+<p className="text-xs mt-2 text-gray-400">
+{avgAccuracy >= 90 ? "Unlocked" : `Current: ${avgAccuracy}%`}
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </div>
 
 {/* PERFORMANCE INSIGHTS */}
-<div className="bg-white/80 backdrop-blur border border-gray-200 p-8 rounded-3xl shadow-md space-y-4">
-  <h2 className="text-lg font-semibold">
+
+<div className="bg-white p-8 rounded-2xl shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+
+  <h2 className="text-lg font-semibold mb-6">
     Performance Insights
   </h2>
 
-  <p className="text-sm text-gray-600">
-    You have completed {mockTests} mock tests.
-  </p>
+  {plan !== "Pro" ? (
 
-  <p className="text-sm text-gray-600">
-    Your average accuracy is {avgAccuracy}%.
-  </p>
+    <div className="text-center py-10">
 
-  <p className="text-sm text-gray-600">
-    Focus on improving {weakest}.
-  </p>
+      <p className="text-gray-400 text-sm mb-3">
+        🔒 Unlock detailed performance insights with Pro
+      </p>
 
-  <p className="text-sm text-gray-600">
-  Trend: {trend}
-</p>
+      <button
+        onClick={handleProUpgrade}
+        className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm"
+      >
+        Upgrade to Pro
+      </button>
+
+    </div>
+
+  ) : (
+
+    <div className="grid grid-cols-4 gap-6">
+
+      {/* MOCK TESTS */}
+      <div className="bg-blue-50 border border-blue-100 p-5 rounded-xl">
+        <p className="text-xs text-gray-500 mb-1">Mock Tests Completed</p>
+        <p className="text-2xl font-semibold text-blue-600">
+          {mockTests}
+        </p>
+      </div>
+
+      {/* AVG ACCURACY */}
+      <div className="bg-green-50 border border-green-100 p-5 rounded-xl">
+        <p className="text-xs text-gray-500 mb-1">Average Accuracy</p>
+        <p className="text-2xl font-semibold text-green-600">
+          {avgAccuracy}%
+        </p>
+      </div>
+
+      {/* WEAKEST */}
+      <div className="bg-red-50 border border-red-100 p-5 rounded-xl">
+        <p className="text-xs text-gray-500 mb-1">Weakest Section</p>
+        <p className="text-lg font-semibold text-red-600">
+          {weakest}
+        </p>
+      </div>
+
+      {/* TREND */}
+      <div className="bg-purple-50 border border-purple-100 p-5 rounded-xl">
+        <p className="text-xs text-gray-500 mb-1">Performance Trend</p>
+        <p className="text-lg font-semibold text-purple-600">
+          {trend}
+        </p>
+      </div>
+
+    </div>
+
+  )}
 
 </div>
 
@@ -497,7 +752,7 @@ const handleProUpgrade = async () => {
         Perfect for getting started
       </p>
       <p className="text-3xl font-bold">
-        $0 <span className="text-sm font-normal">/month</span>
+        ₹0 <span className="text-sm font-normal">/month</span>
       </p>
       <button className="mt-6 w-full bg-gray-200 py-2 rounded-lg">
         Current Plan
@@ -551,7 +806,7 @@ const handleProUpgrade = async () => {
 
   {/* Back to Dashboard */}
   <button
-    onClick={() => navigate("/dashboard")}
+    onClick={() => navigate("/app")}
     className="w-full bg-gray-100 hover:bg-gray-200 transition py-3 rounded-xl"
   >
     Back to Dashboard
@@ -602,23 +857,24 @@ const handleProUpgrade = async () => {
   className="w-full border px-3 py-2 rounded-lg"
   placeholder="Name"
 /> 
-<input
+{/* <input
   value={location}
   onChange={(e) => setLocation(e.target.value)}
   className="w-full border px-3 py-2 rounded-lg"
   placeholder="Location"
-/>
+/> */}
    <input
   value={headline}
   onChange={(e) => setHeadline(e.target.value)}
   className="w-full border px-3 py-2 rounded-lg"
   placeholder="Headline"
 />
-   <textarea
+  <textarea
   value={bio}
   onChange={(e) => setBio(e.target.value)}
+  rows={4}
   className="w-full border px-3 py-2 rounded-lg"
-  placeholder="About"
+  placeholder="Write a short bio about yourself"
 />
 <input
   value={linkedin}
@@ -648,7 +904,7 @@ const handleProUpgrade = async () => {
 
   await updateDoc(doc(db, "users", user.uid), {
     name: name,
-    location: location,
+    //location: location,
     headline: headline,
     bio: bio,
     linkedin: linkedin,

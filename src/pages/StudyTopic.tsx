@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams,useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const DATA: Record<
@@ -31,6 +31,7 @@ const DATA: Record<
 
 export default function StudyTopic() {
   const { folderId } = useParams();
+  const navigate = useNavigate();
   const section = folderId ? DATA[folderId] : null;
 
   const [activeFile, setActiveFile] = useState<{
@@ -46,6 +47,7 @@ export default function StudyTopic() {
   if (activeFile) {
     return (
       <div className="fixed inset-0 z-[9999] bg-gray-100 flex flex-col">
+     
         {/* TOP BAR */}
         <div className="h-14 bg-white border-b flex items-center justify-between px-4">
           <button
@@ -84,6 +86,12 @@ export default function StudyTopic() {
   /* ================= LIST VIEW ================= */
   return (
     <div className="min-h-screen bg-white p-8">
+<button
+  onClick={() => navigate(-1)}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
       <h1 className="text-3xl font-bold mb-6">
         {section.topic}
       </h1>

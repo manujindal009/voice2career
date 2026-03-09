@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { collection, getDocs,addDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/context/AuthContext";
+
 console.log("🔥 MOCK TEST RUNNER FILE LOADED");
 
 const TEST_TIME_MAP: any = {
@@ -226,6 +227,19 @@ Do you want to submit the test?
 
   return (
     <div className="min-h-screen bg-gray-50">
+
+      <button
+  onClick={() => {
+    const confirmLeave = window.confirm(
+      "Are you sure you want to leave the test?\nYour progress will be lost."
+    );
+    if (confirmLeave) navigate(-1);
+  }}
+  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+>
+  ← Back
+</button>
+    
 
      {/* TIMER HEADER */}
 <div className="sticky top-0 bg-white border-b z-10">
