@@ -29,7 +29,17 @@ const [interviews, setInterviews] = React.useState(0);
 const [avgAccuracy, setAvgAccuracy] = React.useState(0);
 const [bestAccuracy, setBestAccuracy] = React.useState(0);
 const [weakest, setWeakest] = React.useState("N/A");
-const [plan, setPlan] = React.useState("Beginner");
+const [plan, setPlan] = React.useState("Free");
+React.useEffect(() => {
+  const cached = localStorage.getItem("userData");
+
+  if (cached) {
+    const data = JSON.parse(cached);
+
+    setName(data.name || "");
+    setPlan(data.plan || "Free");
+  }
+}, []);
 const [accuracyHistory, setAccuracyHistory] = React.useState([]);
 const [streak, setStreak] = React.useState(0);
 const [badges, setBadges] = React.useState<string[]>([]);
@@ -42,7 +52,12 @@ const [trend, setTrend] = React.useState("Stable");
     if (!user) return;
 
 const userRef = doc(db, "users", user.uid);
-const userSnap = await getDoc(userRef);
+
+const [userSnap, mockSnap, interviewSnap] = await Promise.all([
+  getDoc(userRef),
+  getDocs(collection(db, "users", user.uid, "mockTests")),
+  getDocs(collection(db, "users", user.uid, "interviews"))
+]);
 
 const today = new Date();
 today.setHours(0, 0, 0, 0);
@@ -80,22 +95,22 @@ if (userSnap.exists()) {
   setStreak(currentStreak);
 }
     
-const snap = await getDoc(doc(db, "users", user.uid));
-    if (snap.exists()) {
-      const data = snap.data();
+// const snap = await getDoc(doc(db, "users", user.uid));
+    if (userSnap.exists()) {
+  const data = userSnap.data();
 
 setName(data.name || "");
 setLocation(data.location || "");
 setHeadline(data.headline || "");
-setPlan(data.plan || "Beginner");
+setPlan(data.plan || "Free");
 
 setBio(data.bio || "");
 setLinkedin(data.linkedin || "");
 setGithub(data.github || "");
 // 🔥 MOCK TESTS LOAD
-const mockSnap = await getDocs(
-  collection(db, "users", user.uid, "mockTests")
-);
+// const mockSnap = await getDocs(
+//   collection(db, "users", user.uid, "mockTests")
+// );
 
 setMockTests(mockSnap.size);
 
@@ -168,9 +183,9 @@ if (Object.keys(weakMap).length > 0) {
 }
 
 // 🔥 INTERVIEWS LOAD
-const interviewSnap = await getDocs(
-  collection(db, "users", user.uid, "interviews")
-);
+// const interviewSnap = await getDocs(
+//   collection(db, "users", user.uid, "interviews")
+// );
 
 setInterviews(interviewSnap.size);
 
@@ -747,7 +762,7 @@ Reach 90% average accuracy
   <div className="grid grid-cols-3 gap-6">
 
     <div className="border rounded-2xl p-8">
-      <h3 className="text-xl font-semibold mb-2">Beginner</h3>
+      <h3 className="text-xl font-semibold mb-2">Free</h3>
       <p className="text-gray-500 text-sm mb-4">
         Perfect for getting started
       </p>

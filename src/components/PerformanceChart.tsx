@@ -1,6 +1,8 @@
 type ChartPoint = {
   score: number;
+  label?: string;
 };
+
 
 export default function PerformanceChart({
   data,
@@ -153,8 +155,8 @@ export default function PerformanceChart({
       >
         {data.map((d, i) => (
           <div key={i}>
-            <p className="text-xs text-gray-500">
-  {title === "mock tests" ? "Test" : "Interview"} {i + 1}
+ <p className="text-xs text-gray-500">
+  {d.label ?? `${title === "mock tests" ? "Test" : "Interview"} ${i + 1}`}
 </p>
             <p className="font-semibold text-gray-900">
               {d.score}%

@@ -16,6 +16,7 @@ import AuthGuard from "@/components/AuthGuard";
 import ResetPassword from "./pages/ResetPassword";
 import InterviewDetails from "@/pages/InterviewDetails";
 import Privacy from "@/pages/Privacy";
+import MockHistory from "./pages/MockHistory";
 import Terms from "@/pages/Terms";
  import InterviewCompleted from "@/pages/InterviewCompleted";
 import StudyReader from "@/pages/StudyReader";
@@ -125,6 +126,7 @@ export default function App() {
     </ProtectedRoute>
   }
 />
+<Route path="/mock-history" element={<MockHistory />} />
 
 <Route path="/reset-password" element={<ResetPassword />} />
 <Route path="/about" element={<About />} />
