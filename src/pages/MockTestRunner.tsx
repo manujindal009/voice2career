@@ -235,7 +235,7 @@ Do you want to submit the test?
     );
     if (confirmLeave) navigate(-1);
   }}
-  className="fixed top-2 left-4 z-[9999] bg-transparent border border-gray-200 px-2 py-1 rounded-xl hover:bg-gray-100"
+  className="fixed top-2 left-2 sm:left-4 z-[9999] bg-white border border-gray-200 px-2 py-1 rounded-lg shadow-sm hover:bg-gray-100 text-sm"
 >
   ← Back
 </button>
@@ -243,7 +243,7 @@ Do you want to submit the test?
 
      {/* TIMER HEADER */}
 <div className="sticky top-0 bg-white border-b z-10">
-  <div className="max-w-7xl mx-auto px-6 py-4">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
 
 
     <div className="flex justify-between mb-2">
@@ -302,9 +302,9 @@ Do you want to submit the test?
 
 
       {/* QUESTION */}
-      <div className="max-w-[1600px] mx-auto mt-8 grid grid-cols-[1fr_2fr_1fr] gap-8 items-stretch px-6">
+      <div className="max-w-[1800px] mx-auto mt-4 sm:mt-6 grid grid-cols-1 lg:grid-cols-[0.8fr_3fr_1fr] gap-6 px-6">
         {/* LEFT SIDE - ROUGH NOTES */}
-<div className="col-start-1 bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
+<div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
 
 <p className="text-base font-semibold mb-3 text-gray-700">
 Rough Notes
@@ -312,7 +312,7 @@ Rough Notes
 
 <textarea
 placeholder="Write your rough work here..."
-className="w-full h-[500px] border border-gray-300 rounded-lg p-3 text-sm outline-none resize-none"
+className="w-full h-[220px] sm:h-[320px] lg:h-[500px] border border-gray-300 rounded-lg p-3 text-sm outline-none resize-none"
 />
 
 <p className="text-xs text-gray-400 mt-2">
@@ -320,9 +320,9 @@ Notes will not be saved after the test.
 </p>
 
 </div>
-        <div className="col-start-2 bg-white border border-gray-200 rounded-2xl p-10 shadow-md h-full">
+        <div className="bg-white border border-gray-200 rounded-2xl p-8 lg:p-12 shadow-md h-full">
 
-          <h2 className="text-lg font-semibold mb-6">
+         <h2 className="text-lg sm:text-xl font-semibold mb-6">
             {question.question}
           </h2>
 
@@ -331,7 +331,7 @@ Notes will not be saved after the test.
               <button
                 key={i}
                 onClick={() => selectOption(i)}
-                className={`w-full text-left p-4 rounded-xl border border-gray-200 transition hover:border-blue-400 hover:bg-blue-50
+                className={`w-full text-left p-3 sm:p-4 rounded-xl border border-gray-200 transition hover:border-blue-400 hover:bg-blue-50
   ${
     selected === i
       ? "bg-blue-50 border-blue-500"
@@ -356,7 +356,7 @@ Notes will not be saved after the test.
 >
   {review[currentIndex] ? "⭐ Marked for Review" : "☆ Mark for Review"}
 </button>
-<div className="flex justify-between mt-8">
+<div className="flex flex-col sm:flex-row gap-3 sm:justify-between mt-6 sm:mt-8">
 <Button
 variant="outline"
 className="px-6 py-2"
@@ -380,13 +380,13 @@ isLast
 
 
         </div>
-        <div className="col-start-3 bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
+        <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-md h-full">
 
 <p className="text-base font-semibold mb-4 text-gray-700">
 Question Palette
 </p>
 
-<div className="grid grid-cols-5 gap-4 justify-items-center">
+<div className="grid grid-cols-4 sm:grid-cols-5 gap-3 sm:gap-4 justify-items-center">
   {questions.map((_, i) => (
     <button
       key={i}

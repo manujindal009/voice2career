@@ -176,11 +176,11 @@ export default function Interview() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 text-center">
       {/* Interviewer */}
       <img
         src="/interviewer.jpg"
-        className="w-40 h-40 rounded-full object-cover mb-3"
+        className="w-24 h-24 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full object-cover mb-3"
       />
       <p className="font-semibold">Ms. Kapoor (Interviewer)</p>
 
@@ -188,7 +188,7 @@ export default function Interview() {
         Question {current + 1} of {questions.length}
       </p>
 
-      <h1 className="text-2xl font-bold mt-4 text-center">
+      <h1 className="text-lg sm:text-xl md:text-2xl font-bold mt-4 text-center">
         {questions[current]}
       </h1>
 
@@ -201,11 +201,11 @@ export default function Interview() {
         value={answer}
         onChange={e => setAnswer(e.target.value)}
         placeholder="Speak your answer..."
-        className="mt-4 w-full max-w-xl h-32 border rounded-md p-3"
+        className="mt-4 w-full max-w-xl h-32 sm:h-36 border rounded-md p-3 text-sm sm:text-base"
       />
 
       {/* Controls */}
-      <div className="flex gap-4 mt-6">
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mt-6 w-full max-w-xl">
         <button
           onClick={handleNext}
           className="px-5 py-2 rounded-md bg-gray-200"
@@ -225,7 +225,7 @@ export default function Interview() {
         ref={videoRef}
         autoPlay
         muted
-        className="fixed bottom-4 right-4 w-48 rounded-lg border"
+        className="fixed bottom-3 right-3 w-24 sm:w-32 md:w-40 rounded-lg border shadow-lg"
       />
     </div>
   );
