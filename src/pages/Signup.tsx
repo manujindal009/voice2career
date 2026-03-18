@@ -464,7 +464,7 @@ export default function Signup() {
           <div className="su-stats">
             <div className="su-stat">
               <span className="su-stat-num">100+</span>
-              <span className="su-stat-label">Users Placed</span>
+              <span className="su-stat-label">Daily Active Users</span>
             </div>
             <div className="su-stat-div" />
             <div className="su-stat">
@@ -473,7 +473,7 @@ export default function Signup() {
             </div>
             <div className="su-stat-div" />
             <div className="su-stat">
-              <span className="su-stat-num">5+</span>
+              <span className="su-stat-num">2</span>
               <span className="su-stat-label">Partner Companies</span>
             </div>
           </div>

@@ -500,7 +500,7 @@ if (snap.exists()) {
           <div className="v2c-stats">
             <div className="v2c-stat">
               <span className="v2c-stat-num">100+</span>
-              <span className="v2c-stat-label">Users Placed</span>
+              <span className="v2c-stat-label">Daily Active Users</span>
             </div>
             <div className="v2c-stat-div" />
             <div className="v2c-stat">
@@ -509,7 +509,7 @@ if (snap.exists()) {
             </div>
             <div className="v2c-stat-div" />
             <div className="v2c-stat">
-              <span className="v2c-stat-num">5+</span>
+              <span className="v2c-stat-num">2</span>
               <span className="v2c-stat-label">Partner Companies</span>
             </div>
           </div>
