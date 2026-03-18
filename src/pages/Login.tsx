@@ -6,6 +6,7 @@ import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { doc, setDoc, getDoc } from "firebase/firestore";
 import { db } from "@/lib/firebase";
 import { useAuth } from "@/context/AuthContext";
+import { saveUser } from "@/lib/saveUser";
 import { sendEmailVerification } from "firebase/auth";
 
 function WaveIcon() {
@@ -143,6 +144,7 @@ if (snap.exists()) {
     const provider = new GoogleAuthProvider();
     const result = await signInWithPopup(auth, provider);
     const user = result.user;
+    await saveUser("google");
 
     await setDoc(
       doc(db, "users", user.uid),
