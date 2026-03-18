@@ -1,26 +1,29 @@
 import { auth } from "@/lib/firebase";
 import { db } from "@/lib/firebase";
-import { doc, setDoc, serverTimestamp } from "firebase/firestore";
+import { doc, setDoc, serverTimestamp, getDoc } from "firebase/firestore";
 
-export async function saveUser(
-  provider: "google" | "email"
-) {
+export async function saveUser(provider) {
   const user = auth.currentUser;
   if (!user) return;
 
-  try {
-    await setDoc(
-      doc(db, "users", user.uid),
-      {
-        uid: user.uid,
-        name: user.displayName || "Candidate",
-        email: user.email || null,
-        provider,
-        createdAt: serverTimestamp(),
-      },
-      { merge: true }
-    );
-  } catch {
-    // ❌ kuch bhi throw nahi karna
+  const userRef = doc(db, "users", user.uid);
+  const snap = await getDoc(userRef);
+
+  if (!snap.exists()) {
+    // 🔥 NEW USER → full data save
+    await setDoc(userRef, {
+      uid: user.uid,
+      name: user.displayName || "Candidate",
+      email: user.email || "",
+      provider,
+      createdAt: serverTimestamp(),
+      plan: "Free",
+      banned: false
+    });
+  } else {
+    // 🔁 EXISTING USER → sirf login update
+    await setDoc(userRef, {
+      lastLoginDate: new Date()
+    }, { merge: true });
   }
 }
