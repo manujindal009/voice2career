@@ -8,6 +8,10 @@ import {
 } from "firebase/firestore";
 
 export default function AdminUsers() {
+  const formatDate = (timestamp) => {
+  if (!timestamp) return "N/A";
+  return timestamp.toDate().toLocaleDateString();
+};
 
     const ADMIN_EMAIL = "voice2career@yahoo.com";
     const [search, setSearch] = useState("");
@@ -115,6 +119,7 @@ export default function AdminUsers() {
               <th className="p-4">Email</th>
               <th className="p-4">Plan</th>
               <th className="p-4">Status</th>
+              <th className="p-4">Joined</th>
               <th className="p-4">Actions</th>
 
             </tr>
@@ -124,7 +129,7 @@ export default function AdminUsers() {
           <tbody>
             {users.length === 0 && (
 <tr>
-<td colSpan={5} className="text-center p-8 text-gray-400">
+<td colSpan={6} className="text-center p-8 text-gray-400">
 No users found
 </td>
 </tr>
@@ -162,6 +167,9 @@ No users found
                   )}
 
                 </td>
+                <td className="p-4">
+  {formatDate(user.createdAt)}
+</td>
 
                 <td className="p-4 flex gap-2 flex-wrap">
 
