@@ -113,9 +113,9 @@ export default function LandingPage() {
           </div>
 
           <div className="pt-12 grid sm:grid-cols-3 gap-8 opacity-90">
-            <Stat value="100+" label="Users Placed Successfully" />
+            <Stat value="100+" label="Daily Active Users" />
             <Stat value="95%" label="Interview Success Rate" />
-            <Stat value="5" label="Partner Companies" />
+            <Stat value="2" label="Partner Companies" />
           </div>
         </div>
       </section>
