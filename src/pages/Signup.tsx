@@ -444,7 +444,7 @@ export default function Signup() {
               {[
                 { icon: "🎙️", title: "AI Mock Interviews", desc: "Voice practice with real-time AI feedback" },
                 { icon: "📚", title: "Study Material",     desc: "Curated notes & topic-wise resources" },
-                { icon: "🧪", title: "Mock Tests",         desc: "Company-pattern tests, just like real ones" },
+                { icon: "📝", title: "Mock Tests",         desc: "Company-pattern tests, just like real ones" },
                 { icon: "📄", title: "Resume Analyzer",    desc: "AI resume scoring & suggestions", soon: true },
               ].map((f) => (
                 <div className="su-feat" key={f.title}>
