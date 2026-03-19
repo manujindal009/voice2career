@@ -52,7 +52,7 @@ function EyeIcon({ open }: { open: boolean }) {
 const FEATURES = [
   { icon: "🎙️", title: "AI Mock Interviews", desc: "Voice-based practice with real-time AI feedback", live: true },
   { icon: "📚", title: "Study Material",     desc: "Curated notes, guides & topic-wise resources",   live: true },
-  { icon: "🧪", title: "Mock Tests",          desc: "Company-pattern tests just like the real thing", live: true },
+  { icon: "📝", title: "Mock Tests",          desc: "Company-pattern tests just like the real thing", live: true },
   { icon: "📄", title: "Resume Analyzer",     desc: "AI-powered resume scoring & suggestions",        live: false },
 ];
 
