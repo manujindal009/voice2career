@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "voice2career",
   "private": true,
-  "version": "0.0.0",
+  "description": "AI-powered career preparation platform featuring mock interviews, tests, and study materials.",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
