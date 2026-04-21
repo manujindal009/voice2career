@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  apiKey: "AIzaSyDYUz8XYEqijx_NiUnvPbcaYqHyHEuTkdE",
+  authDomain: "voice2career.firebaseapp.com",
+  projectId: "voice2career",
+  storageBucket: "voice2career.appspot.com",
+  messagingSenderId: "639922148294",
+  appId: "1:639922148294:web:b2e3be238099a42aaa98c7",
 };
 
 const app = initializeApp(firebaseConfig);
